@@ -1,0 +1,19 @@
+.hero h1{
+    margin-top:0;
+    padding: 0 20px 20px 20px;
+    top: auto;
+font-weight: 1000;
+size: 100px;
+text-decoration: underline;
+/* font-family: sans-serif; */
+font-family: "Pacifico", cursive;
+text-transform: uppercase;
+font-size: 50px;
+color: #9b99fa;
+-webkit-text-stroke-width: 5.5px;
+-webkit-text-stroke-color: #3764f5;
+display: flex;
+justify-content: flex-start;
+text-shadow: 0 0 40px #fa1049, 0 0 40px #3f307a, 0 0 40px #005a7dc9;
+flex-direction: row;
+}
