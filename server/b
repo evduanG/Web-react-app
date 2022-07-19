@@ -1,0 +1,818 @@
+ [
+ {
+            "id":"11005",
+            "title":"Dry Martini",
+            "titleAlternate":null,
+            "tags":["IBA","Classic","Christmas","Alcoholic"],
+            "strVideo":"hYZKlE8qCrk",
+            "category":"Cocktail",
+            "subcategory":"Cocktail",
+            "strIBA":"Unforgettables",
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Cocktail glass",
+            "preparationStages":["Straight: Pour all ingredients into mixing glass with ice cubes. Stir well. Strain in chilled martini cocktail glass. Squeeze oil from lemon peel onto the drink, or garnish with olive.","Dritto: Versare tutti gli ingredienti nel mixing glass con cubetti di ghiaccio. Mescolare bene. Filtrare in una coppetta da cocktail Martini ghiacciata. Spremi l'olio della scorza di limone sulla bevanda o guarnisci con l'oliva."],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/6ck9yi1589574317.jpg",
+            "Ingredients":[
+                {
+                "type":"Gin",
+                "quantity":"1 2/3 oz "
+                },
+                {
+                "type":"Dry Vermouth",
+                "quantity":"1/3 oz "
+                },
+                {
+                    "type":"Olive",
+                    "quantity":"1 "
+            }],
+            "strCreativeCommonsConfirmed":"Yes"
+        },
+        {
+            "id":"11028",
+            "title":"Amaretto Stinger",
+            "tags":null,
+            "strVideo":"b46epooEPJ4",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Cocktail glass",
+            "preparationStages":["Shake ingredients well with cracked ice, strain into a cocktail glass, and serve.","Die Zutaten gut mit zerkleinertem Eis schütteln, in ein Cocktailglas abseihen und servieren.","Shakerare bene gli ingredienti con ghiaccio tritato, filtrare in una coppetta da cocktail e servire."],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/vvop4w1493069934.jpg",
+            "Ingredients":[
+                {
+                "type":"Amaretto",
+                "quantity":"1 1/2 oz "
+                },
+                {
+                "type":"Amaretto",
+                "quantity":"3/4 oz "
+                },
+                {
+                "type":"White Creme de Menthe",
+                "quantity":null
+            }
+        ],
+            "strCreativeCommonsConfirmed":"No"
+},
+        {
+            "id":"11001",
+            "title":"Old Fashioned",
+            "tags":["IBA","Classic","Alcoholic","Expensive","Savory"],
+            "strVideo":"YsE_igrPXZs",
+            "category":"Cocktail",
+            "subcategory":"Cocktail",
+            "strIBA":"Unforgettables",
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Old-fashioned glass",
+            "preparationStages":["Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved.\r\nFill the glass with ice cubes and add whiskey.\r\n\r\nGarnish with orange twist, and a cocktail cherry.","Zuckerwürfel in ein old fashioned Glas geben und mit Bitterstoff sättigen, einen Schuss Wasser hinzufügen. Vermischen, bis sie sich auflösen.","Mettere la zolletta di zucchero nel bicchiere vecchio stile e saturare con il bitter, aggiungere un goccio di acqua naturale.\r\nPestare finché non si scioglie.\r\nRiempi il bicchiere con cubetti di ghiaccio e aggiungi il whisky.\r\nGuarnire con una scorza d'arancia e una ciliegina al maraschino."],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg",
+            "Ingredients":[
+                {
+                "type":"Bourbon",
+                "quantity":"4.5 cL"
+                },
+                {
+                "type":"Angostura bitters",
+                "quantity":"2 dashes"
+                },
+                {
+                    "type":"Sugar",
+                    "quantity":"1 cube"
+                    },
+                {
+                    "type":"Water",
+                    "quantity":"1 dash"
+                    }],
+            "strCreativeCommonsConfirmed":"Yes"
+        },
+        {
+            "id":"11000",
+            "title":"Mojito",
+            "tags":["IBA","ContemporaryClassic","Alcoholic","USA","Asia","Vegan","Citrus","Brunch","Hangover","Mild"],
+            "strVideo":"NANdz-YKMUw",
+            "category":"Cocktail",
+            "subcategory":"Cocktail",
+            "strIBA":"Contemporary Classics",
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Highball glass",
+            "preparationStages":["Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw.","Minzblätter mit Zucker und Limettensaft verrühren. Füge einen Spritzer Sodawasser hinzu und fülle das Glas mit gebrochenem Eis. Den Rum eingießen und mit Sodawasser übergießen. Garnieren und mit einem Strohhalm servieren.","Pestare le foglie di menta con lo zucchero e il succo di lime.\r\nAggiungere una spruzzata di acqua di seltz e riempi il bicchiere con ghiaccio tritato.\r\nVersare il rum e riempire con acqua di seltz.\r\nGuarnire con una fetta di lime, servire con una cannuccia."],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg",
+            "Ingredients":[
+                {
+                "type":"Mint",
+                "quantity":"2-4 fresh "
+                },
+                {
+                "type":"Sugar",
+                "quantity":"1/2 tsp "
+                },
+                {
+                    "type":"Lime juice",
+                    "quantity":"1/4 tsp "
+                    },
+                {
+                    "type":"Rum",
+                    "quantity":"1 shot "
+                    },
+                {
+                    "type":"Soda water",
+                    "quantity":"Top with "
+                    }],
+            "strCreativeCommonsConfirmed":"Yes"
+        },
+        {
+            "id":"11003",
+            "title":"Negroni",
+            "tags":["IBA","Classic"],
+            "strVideo":"Y4LH0FQlU8Q",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":"Unforgettables",
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Old-fashioned glass",
+            "preparationStages":["Stir into glass over ice, garnish and serve.","In ein Glas über das Eis gießen, garnieren und servieren.","Mescolare nel bicchiere con ghiaccio, guarnire e servire."],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/qgdu971561574065.jpg",
+            "Ingredients":[
+                {
+                "type":"Gin",
+                "quantity":"1 1/2 oz "
+                },
+                {
+                "type":"Campari",
+                "quantity":"1 1/2 oz "
+                },
+                {
+                    "type":"Sweet Vermouth",
+                    "quantity":"1 1/2 oz "
+                    },
+                {
+                    "type":"Orange bitters",
+                    "quantity":"1 twist of "
+            }],
+            "strCreativeCommonsConfirmed":"Yes"
+        },
+        {
+            "id":"11004",
+            "title":"Whiskey Sour",
+            "tags":["IBA","Classic","Alcoholic","ContemporaryClassic"],
+            "strVideo":"hFKZPzfngcU",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":"Unforgettables",
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Old-fashioned glass",
+            "preparationStages":[ "Shake with ice. Strain into chilled glass, garnish and serve. If served 'On the rocks', strain ingredients into old-fashioned glass filled with ice.",
+                "Mit Eis schütteln. In ein gekühltes Glas abseihen, garnieren und servieren. Wenn Sie \"On the rocks\" servieren, die Zutaten in ein old-fashioned, mit Eis gefülltes Glas geben.",
+"Shakerare con ghiaccio.Filtrare in un bicchiere freddo, guarnire e servire.Se servito \"On the rocks\",filtra gli ingredienti in un bicchiere vecchio stile pieno di ghiaccio."],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/hbkfsh1589574990.jpg",
+            "Ingredients":[
+                {
+                "type":" Whiskey",
+                "quantity":"2 oz "
+                },
+                {
+                "type":"Sour mix",
+                "quantity":"2 oz "
+                },
+                {
+                    "type":"Lemon juice",
+                    "quantity":"1/2 slice "
+                    },
+                {
+                    "type":"Cherry",
+                    "quantity":"1/2 tsp "
+                    }
+            ],
+            "strCreativeCommonsConfirmed":"Yes"
+        },
+        {
+            "id":"11005",
+            "title":"Dry Martini",
+            "tags":["IBA","Classic","Christmas","Alcoholic"],
+            "strVideo":null,
+            "category":"Cocktail",
+            "subcategory":"Cocktail",
+            "strIBA":"Unforgettables",
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Cocktail glass",
+            "preparationStages":["Straight: Pour all ingredients into mixing glass with ice cubes. Stir well. Strain in chilled martini cocktail glass. Squeeze oil from lemon peel onto the drink, or garnish with olive.",
+"Dritto: Versare tutti gli ingredienti nel mixing glass con cubetti di ghiaccio. Mescolare bene. Filtrare in una coppetta da cocktail Martini ghiacciata. Spremi l'olio della scorza di limone sulla bevanda o guarnisci con l'oliva."],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/6ck9yi1589574317.jpg",
+            "Ingredients":[
+                {
+                "type":" Gin",
+                "quantity":"1 1/2 oz "
+                },
+                {
+                "type":" Dry Vermouth",
+                "quantity":"1/2 oz "
+                },
+                {
+                    "type":" Lemon peel",
+                    "quantity":"1 twist of "
+            }],
+            "strCreativeCommonsConfirmed":"Yes"
+        },
+        {
+            "id":"11006",
+            "title":"Daiquiri",
+            "tags":["IBA","Classic","Beach"],
+            "strVideo":"TbRmNrAeymo",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Cocktail glass",
+            "preparationStages":["Pour all ingredients into shaker with ice cubes. Shake well. Strain in chilled cocktail glass.","Alle Zutaten in den Shaker mit Eiswürfel geben. Gut schütteln. In einem gekühlten Cocktailglas abseihen.","Versare tutti gli ingredienti nello shaker con cubetti di ghiaccio.Filtrare in una coppetta da cocktail ghiacciata. Agitare bene"],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/mrz9091589574515.jpg",
+            "Ingredients":[
+                {
+                "type":" White rum",
+                "quantity":"1 1/2 oz "
+                },
+                {
+                "type":" Light cream",
+                "quantity":"1 oz "
+                },
+                {
+                "type":" Lemon juice",
+                "quantity":"1 oz "
+            }],
+            "strCreativeCommonsConfirmed":"Yes"
+        },
+        {
+            "id":"11008",
+            "title":"Manhattan",
+            "tags":["IBA","Classic","Alcoholic"],
+            "strVideo":"TFWPtkNoF4Y",
+            "category":"Cocktail",
+            "subcategory":"Cocktail",
+            "strIBA":"Unforgettables",
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Cocktail glass",
+            "preparationStages":["Stirred over ice, strained into a chilled glass, garnished, and served up.","Über Eis gerührt, in ein gekühltes Glas geseiht, garniert und serviert.","Mescolate su ghiaccio, filtrate in un bicchiere freddo, guarnite e servite."],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/yk70e31606771240.jpg",
+            "Ingredients":[
+                {
+                    "type":" Sweet vermouth",
+                    "quantity":"3/4 oz"
+                },
+                {
+                    "type":"Bourbon",
+                    "quantity":"2 1/2 oz Blended "
+                },
+                {
+                    "type":"Angostura bitters",
+                    "quantity":"1 dash"
+                },
+                {
+                    "type":"Orange bitters",
+                    "quantity":"1 dash"
+                    },
+                {
+                    "type":"Lemon peel",
+                    "quantity":"1 twist of "
+                },
+                {
+                    "type":"Maraschino cherry",
+                    "quantity":"1 "
+            }],
+            "strCreativeCommonsConfirmed":"Yes"
+        },
+        {
+            "id":"11009",
+            "title":"Moscow Mule",
+            "tags":["IBA","ContemporaryClassic"],
+            "strVideo":"J7X-AeGHPcE",
+            "category":"Cocktail",
+            "subcategory":"Punch / Party Drink",
+            "strIBA":"Contemporary Classics",
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Copper Mug",
+            "preparationStages":["Combine vodka and ginger beer in a highball glass filled with ice. Add lime juice. Stir gently. Garnish.","Mischen Sie Wodka und Ingwerbier in einem mit Eis gefüllten Highball-Glas. Limettensaft hinzufügen. Vorsichtig umrühren. Garnieren.","Unisci la vodka e la ginger beer in un bicchiere highball pieno di ghiaccio.\r\nAggiungi il succo di lime.\r\nMescola delicatamente."],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/3pylqc1504370988.jpg",
+            "Ingredients":[
+                {
+                "type":"Vodka",
+                "quantity":"2 oz "
+                },
+                {
+                "type":" Ginger beer",
+                "quantity":"8 oz "
+                },
+                {
+                "type":"Lime juice",
+                "quantity":"2 oz "
+                }],
+            "strCreativeCommonsConfirmed":"Yes"
+        },
+        {
+            "id":"11010",
+            "title":"After Dinner Cocktail",
+            "tags":["DinnerParty"],
+            "strVideo":"pGxdkMRs6-8",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Cocktail glass",
+            "preparationStages":["Shake all ingredients (except lime wedge) with ice and strain into a cocktail glass. Add the wedge of lime and serve.","Alle Zutaten (außer Limettenkeil) mit Eis schütteln und in ein Cocktailglas abseihen. Den Limettenkeil dazugeben und servieren.","Shakerare tutti gli ingredienti (eccetto uno spicchio di lime) con ghiaccio e filtrare in una coppetta da cocktail.Aggiungere lo spicchio di lime e servire."],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/vtytxq1483387578.jpg",
+            "Ingredients":[
+                {
+                "type":"Apricot brandy",
+                "quantity":"1 oz "
+                },
+                {
+                "type":"Triple sec",
+                "quantity":"1 oz "
+                },
+                {
+                "type":"Lime",
+                "quantity":"Juice of 1 "
+                },
+                {
+                "type":"Lime",
+                "quantity":"1 "
+            }],
+            "strCreativeCommonsConfirmed":"Yes"
+        },
+        {
+            "id":"11011",
+            "title":"After Supper Cocktail",
+            "tags":null,
+            "strVideo":"nEGT4mVj0eI",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Cocktail glass",
+            "preparationStages":["Shake all ingredients with ice, strain into a cocktail glass, and serve.","Alle Zutaten mit Eis schütteln, in ein Cocktailglas abseihen und servieren.","Shakerare tutti gli ingredienti con ghiaccio, filtrare in una coppetta da cocktail e servire."       ],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/quyxwu1483387610.jpg",
+            "Ingredients":[
+                {
+                "type":"Triple sec",
+                "quantity":"1 oz "
+                },
+                {
+                    "type":"Apricot brandy",
+                    "quantity":"1 oz "
+                    },
+                    {
+                        "type":"Lemon juice",
+                        "quantity":"1/2 tsp "
+                        }],
+            "strCreativeCommonsConfirmed":"Yes"
+        },
+        {
+            "id":"11012",
+            "title":"Alabama Slammer",
+            "tags":["Summer"],
+            "strVideo":"ypJtoXvcc7g",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Highball glass",
+            "preparationStages":["Pour all ingredients (except for lemon juice) over ice in a highball glass. Stir, add a dash of lemon juice, and serve.","Alle Zutaten (außer Zitronensaft) in einem Highball-Glas über Eis gießen. Umrühren, einen Schuss Zitronensaft hinzufügen und servieren.","Versare tutti gli ingredienti (tranne il succo di limone) sul ghiaccio in un bicchiere highball.Mescolate, aggiungete un goccio di succo di limone e servite."
+        ],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/jntghf1606771886.jpg",
+            
+            "Ingredients":[
+                {
+                "type":"Southern Comfort",
+                "quantity":"1 oz "
+            },{
+                "type":"Amaretto",
+                "quantity":"1 oz "
+            },
+            {
+                "type":"Sloe gin",
+                "quantity":"1/2 oz "
+            },
+            {
+                "type":"Lemon juice",
+                "quantity":"1 dash "
+            }],
+            "strCreativeCommonsConfirmed":"Yes"
+        },
+        {
+            "id":"11013",
+            "title":"Alaska Cocktail",
+            "tags":["Beach","Chilli"],
+            "strVideo":"9a35Zylc-uM",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Cocktail glass",
+            "preparationStages":["Stir all ingredients with ice, strain contents into a cocktail glass. Drop in a twist of lemon and serve.",
+"Alle Zutaten mit Eis verrühren, Inhalt in ein Cocktailglas abseihen. Einen Spritzer Zitrone dazugeben und servieren.",
+"Mescolare tutti gli ingredienti con ghiaccio, filtrare il contenuto in un bicchiere da cocktail.Aggiungere una noce di limone e servire."
+        ],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/wsyryt1483387720.jpg",
+            "Ingredients":[
+            {
+                "type":"Orange bitters",
+                "quantity":"2 dashes "
+                },{
+                "type":"Gin",
+                "quantity":"1 1/2 oz "
+                },{
+                "type":"Yellow Chartreuse",
+                "quantity":"3/4 oz "
+                },{
+                "type":"Lemon peel",
+                "quantity":"Twist of "
+                }],
+            "strCreativeCommonsConfirmed":"No"
+        },
+        {
+            "id":"11014",
+            "title":"Alexander",
+            "tags":["IBA","Classic","Dairy"],
+            "strVideo":"qEhRK_v2w2g",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":"Unforgettables",
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Cocktail glass",
+            "preparationStages":["Shake all ingredients with ice and strain contents into a cocktail glass. Sprinkle nutmeg on top and serve.",
+"Alle Zutaten mit Eis schütteln und in ein Cocktailglas abseihen. Muskatnuss darüber streuen und servieren.",
+"Shakerare tutti gli ingredienti con ghiaccio e filtrare il contenuto in un bicchiere da cocktail. Cospargere di noce moscata e servire."
+        ],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/0clus51606772388.jpg",
+            "Ingredients":[
+                {
+                "type":"Gin",
+                "quantity":"1/2 oz "
+                },
+                {
+                    "type":"Creme de Cacao",
+                    "quantity":"1/2 oz white "
+                    },
+                    {
+                        "type":"Light cream",
+                        "quantity":"1 oz "
+                        },
+                        {
+                            "type":"Nutmeg",
+                            "quantity":"1 tsp "
+                            },
+                            {
+                                "type":"Egg white",
+                                "quantity":"2 oz "
+                                }
+    ],
+            "strCreativeCommonsConfirmed":"Yes"
+
+        },
+        {
+            "id":"11016",
+            "title":"Brandy Alexander",
+            "tags":["Nutty","Dairy"],
+            "strVideo":"5LEgIoddxY4",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Whiskey Glass",
+            "preparationStages":["Shake all ingredients (except nutmeg) with ice and strain contents into a cocktail glass. Sprinkle nutmeg on top and serve.",
+"Alle Zutaten (außer Muskatnuss) mit Eis schütteln und in ein Cocktailglas abseihen. Muskatnuss darüber streuen und servieren.",
+"Shakerare tutti gli ingredienti (tranne la noce moscata) con ghiaccio e filtrare il contenuto in una coppetta da cocktail. Cospargere di noce moscata e servire."
+        ],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/mlyk1i1606772340.jpg",
+            "Ingredients":[
+                {
+                "type":"Brandy",
+                "quantity":"1  oz "
+                },
+                {
+                    "type":"Creme de Cacao",
+                    "quantity":"1 oz white "
+                    },
+                    {
+                        "type":"Light cream",
+                        "quantity":"1 oz "
+                        },
+                        {
+                            "type":"Nutmeg",
+                            "quantity":"1 oz "
+                            }],
+            "strCreativeCommonsConfirmed":"Yes"
+        },
+        {
+            "id":"11019",
+            "title":"Alfie Cocktail",
+            "tags":["Alcoholic"],
+            "strVideo":null,
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Cocktail glass",
+            "preparationStages":["Combine and shake all ingredients with ice, strain into a cocktail glass, and serve.",
+"Alle Zutaten mit Eis mischen und schütteln, in ein Cocktailglas abseihen und servieren.",
+"Unire e scuotere tutti gli ingredienti con ghiaccio, filtrare in una coppetta da cocktail e servire."
+                    ],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/ypxsqy1483387829.jpg",
+            "Ingredients":[
+                {
+                "type":"Lemon vodka",
+                "quantity":"1 1/2 oz "
+                },
+                {
+                    "type":"Triple sec",
+                    "quantity":"1 1/2 oz "
+                    },
+                    {
+                        "type":"Pineapple juice",
+                        "quantity":"1 tblsp "
+                        },
+                        {
+                            "type":"Cherry",
+                            "quantity":"1 "
+                            }],
+            "strCreativeCommonsConfirmed":"No"
+        },
+        {
+            "id":"11020",
+            "title":"Algonquin",
+            "tags":null,
+            "strVideo":"ooGw8Pr_eHY",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Cocktail glass",
+            "preparationStages":["Combine and shake all ingredients with ice, strain contents into a cocktail glass, and serve.",
+"Alle Zutaten mit Eis mischen und schütteln, Inhalt in ein Cocktailglas abseihen und servieren.",
+"Unire e scuotere tutti gli ingredienti con ghiaccio, filtrare il contenuto in una coppetta da cocktail e servire."
+        ],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/uwryxx1483387873.jpg",
+            "Ingredients":[
+                {
+                "type":"Blended whiskey",
+                "quantity":"1 1/2 oz "
+                },
+                {
+                    "type":"Dry Vermouth",
+                    "quantity":"1 oz "
+                    },
+                    {
+                        "type":"Dry Vermouth",
+                        "quantity":"1 tblsp "
+                        },
+                        {
+                            "type":"Pineapple juice",
+                            "quantity":"1 oz"
+                            }],
+          
+            "strCreativeCommonsConfirmed":"No"
+        },
+        {
+            "id":"11021",
+            "title":"Allegheny",
+            "tags":null,
+            "strVideo":"jOm-FaiVTIE",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Cocktail glass",
+            "preparationStages":["Shake all ingredients (except lemon peel) with ice and strain into a cocktail glass. Top with the twist of lemon peel and serve.",
+"Alle Zutaten (außer Zitronenschale) mit Eis schütteln und in ein Cocktailglas abseihen. Mit der Drehung der Zitronenschale garnieren und servieren.",
+"Shakerare tutti gli ingredienti (tranne la buccia di limone) con ghiaccio e filtrare in una coppetta da cocktail.Completare con la scorza di limone e servire."
+        ],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/uwvyts1483387934.jpg",
+            "Ingredients":[
+                {"type":"Dry Vermouth", "quantity":"1 oz "},
+                {"type":"Bourbon", "quantity":"1 oz "},
+                {"type":"Blackberry brandy","quantity":"1 1/2 tsp "},
+                {"type":"Lemon juice","quantity":"1 1/2 tsp "},
+                {"type":"Lemon peel","quantity":"1 twist of "}],
+            "strCreativeCommonsConfirmed":"No"
+        },
+        {
+            "id":"11022",
+            "title":"Allies Cocktail",
+            "tags":null,
+            "strVideo":"uI4U-jtFL1E",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Cocktail glass",
+            "preparationStages":["Stir all ingredients with ice, strain contents into a cocktail glass, and serve.",
+"Alle Zutaten mit Eis verrühren, Inhalt in ein Cocktailglas abseihen und servieren.",
+"Mescolare tutti gli ingredienti con ghiaccio, filtrare il contenuto in una coppetta da cocktail e servire."
+        ],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/qvprvp1483388104.jpg",
+            "Ingredients":[
+                {"type":"Dry Vermouth", "quantity":"1 oz "},
+                {"type":"Gin","quantity":"1 oz "},
+                {"type":"Kummel","quantity":"1/2 tsp "}],
+            "strCreativeCommonsConfirmed":"No"
+        },
+        {
+            "id":"11023",
+            "title":"Almeria",
+            "tags":null,
+            "strVideo":"ZzS24aE2PK0",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Cocktail glass",
+            "preparationStages":["In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass.",
+"In einem Shaker, der halb mit Eiswürfeln gefüllt ist, alle Zutaten vermengen. Gut schütteln. In ein Cocktailglas abseihen.",
+"In uno shaker riempito a metà con cubetti di ghiaccio, unire tutti gli ingredienti.Agitare bene.Filtrare in un bicchiere da cocktail."
+        ],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/rwsyyu1483388181.jpg",
+            "Ingredients":[{"type":"Dark rum", "quantity":"2 oz "},
+            {"type":"Kahlua", "quantity":"1 oz "},
+            {"type":"Egg white", "quantity":"1 "}],
+            "strCreativeCommonsConfirmed":"No"
+        },
+        {
+            "id":"11024",
+            "title":"Almond Joy",
+            "tags":null,
+            "strVideo":"mXw38ahkDrY",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Cocktail glass",
+            "preparationStages":["Shake all ingredients with ice, strain into a cocktail glass, and serve.",
+"Alle Zutaten mit Eis schütteln, in ein Cocktailglas abseihen und servieren.",
+"Shakerare tutti gli ingredienti con ghiaccio, filtrare in una coppetta da cocktail e servire."
+        ],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/xutuqs1483388296.jpg",
+            "Ingredients":[{"type":"Amaretto","quantity":"1/2 oz "},
+            {"type":"Creme de Cacao","quantity":"1/2 oz white "},
+            {"type":"Light cream","quantity":"2 oz "}],
+            "strCreativeCommonsConfirmed":"No"
+        },
+        {
+            "id":"11025",
+            "title":"Amaretto And Cream",
+            "tags":null,
+            "strVideo":"STdsptR7YY",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Cocktail glass",
+            "preparationStages":["Shake well with cracked ice, strain contents into a cocktail glass, and serve.",
+"Mit zerkleinertem Eis gut schütteln, Inhalt in ein Cocktailglas abseihen und servieren.",
+"Shakerare bene con ghiaccio tritato, filtrare il contenuto in una coppetta da cocktail e servire."
+        ],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/dj8n0r1504375018.jpg",
+            "Ingredients":[{"type":"Amaretto","quantity":"1 1/2 oz "},
+            {"type":"Light cream","quantity":"1 1/2 oz "}],
+            "strCreativeCommonsConfirmed":"No"
+        },
+        {
+            "id":"11026",
+            "title":"Amaretto Mist",
+            "tags":null,
+            "strVideo":"Z_BB7EjkomA",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Old-fashioned glass",
+            "preparationStages":["Pour amaretto in an old-fashioned glass over crushed ice. Add the wedge of lime and serve. (A wedge of lemon may be substituted for lime, if preferred.)",
+"Gießen Sie Amaretto in ein old-fashioned Glas über Crushed Eis. Den Limettenkeil dazugeben und servieren. (Ein Stück Zitrone kann, wenn gewünscht, durch Limette ersetzt werden.)",
+"Aggiungere lo spicchio di lime e servire.(Uno spicchio di limone può essere sostituito con il lime, se si preferisce.)Versare l'amaretto in un bicchiere vecchio stile su ghiaccio tritato."
+        ],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/utpxxq1483388370.jpg",
+            "Ingredients":[{"type":"Amaretto","quantity":"1 1/2 oz "},
+            {"type":"Lime","quantity":"1 "}],
+            "strCreativeCommonsConfirmed":"Yes"
+        },
+        {
+            "id":"11027",
+            "title":"Amaretto Rose",
+            "tags":null,
+            "strVideo":"o0V4XbuAKFk",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Collins glass",
+            "preparationStages":["Pour amaretto and lime juice over ice in a collins glass. Fill with club soda and serve.",
+"Amaretto und Limettensaft in einem Collins Glas über Eis gießen. Mit Soda auffüllen und servieren.",
+"Versare l'amaretto e il succo di lime sul ghiaccio in un bicchiere Collins.Riempi con la soda club e servi."
+        ],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/3jm41q1493069578.jpg",
+            "Ingredients":[{"type":"Amaretto","quantity":"1 1/2 oz "},
+            {"type":"Lime juice","quantity":"1/2 oz "},
+            {"type":"Club soda","quantity":"1"}],
+            "strCreativeCommonsConfirmed":"No"
+        },
+        {
+            "id":"11028",
+            "title":"Amaretto Stinger",
+            "tags":null,
+            "strVideo":"b46epooEPJ4",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Cocktail glass",
+            "preparationStages":["Shake ingredients well with cracked ice, strain into a cocktail glass, and serve.",
+"Die Zutaten gut mit zerkleinertem Eis schütteln, in ein Cocktailglas abseihen und servieren.",
+ "Shakerare bene gli ingredienti con ghiaccio tritato, filtrare in una coppetta da cocktail e servire."
+        ],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/vvop4w1493069934.jpg",
+            "Ingredients":[{"type":"Amaretto", "quantity":"1 1/2 oz "},
+            {"type":"White Creme de Menthe","quantity":"3/4 oz "}],
+            "strCreativeCommonsConfirmed":"No"
+},
+        {
+            "id":"11029",
+            "title":"Amaretto Tea",
+            "tags":null,
+            "strVideo":"JOuxphbZC7w",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Pousse cafe glass",
+            "preparationStages":["Pour hot tea into a pousse-cafe glass, using a spoon in glass to prevent cracking. Add amaretto, but do not stir. Top with chilled whipped cream and serve.",
+"Gießen Sie heißen Tee in ein Pousse-Café Glas und verwenden Sie einen Löffel im Glas, um Sprünge zu vermeiden. Amaretto hinzufügen, aber nicht rühren. Mit gekühlter Schlagsahne garnieren und servieren.",
+"Versare il tè caldo in un bicchiere pousse-cafe, usando un cucchiaio in vetro per evitare che si spezzi. Coprire con panna montata fredda e servire.Aggiungere l'amaretto, ma non mescolare"
+        ],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/b7qzo21493070167.jpg",
+            "Ingredients":[{"type":"Tea","quantity":"6 oz hot "},
+            {"type":"Amaretto","quantity":"2 oz "},
+            {"type":"Whipped cream","quantity3":"Chilled "}],
+             "strCreativeCommonsConfirmed":"No"
+        },
+        {
+            "id":"11034",
+            "title":"Angel Face",
+            "tags":["IBA","Classic"],
+            "strVideo":"esjMkuXO7aw",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":"Unforgettables",
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Cocktail glass",
+            "preparationStages":["Shake all ingredients with ice and strain contents into a cocktail glass.",
+"Alle Zutaten mit Eis schütteln und in ein Cocktailglas abseihen.",
+"Shakerare tutti gli ingredienti con ghiaccio e filtrare il contenuto in un bicchiere da cocktail."
+        ],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/vaukir1606772580.jpg",
+            "Ingredients":[{"type":"Apricot brandy", "quantity":"1/2 oz "},
+            {"type":"Apple brandy", "quantity":"1/2 oz "},
+            {"type":"Gin", "quantity":"1 oz "}],
+            "strCreativeCommonsConfirmed":"Yes"
+        },
+        {
+            "id":"11046",
+            "title":"Applecar",
+            "tags":null,
+            "strVideo":"Fdb06LONrY0",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Cocktail glass",
+            "preparationStages":["Shake all ingredients with ice, strain into a cocktail glass, and serve.",
+"Alle Zutaten mit Eis schütteln, in ein Cocktailglas abseihen und servieren.",
+"Shakerare tutti gli ingredienti con ghiaccio, filtrare in una coppetta da cocktail e servire."
+        ],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/sbffau1504389764.jpg",
+            "Ingredients":[{"type":"Applejack",  "quantity":"1 oz "},
+            {"type":"Triple sec","quantity":"1 oz "},
+            {"type":"Lemon juice",   "quantity":"1 oz "}],
+
+            "strCreativeCommonsConfirmed":"No"
+        },
+        {
+            "id":"11050",
+            "title":"Apricot Lady",
+            "tags":["Cold"],
+            "strVideo":"1urj1xE0wDI",
+            "category":"Cocktail",
+            "subcategory":"Ordinary Drink",
+            "strIBA":null,
+            "strAlcoholic":"Alcoholic",
+            "strGlass":"Old-fashioned glass",
+            "preparationStages":["In a shaker half-filled with ice cubes, combine the rum, apricot brandy, triple sec, lemon juice, and egg white. Shake well. Strain into an old-fashioned glass almost filled with ice cubes. Garnish with the orange slice.",
+"In einem Shaker, der halb mit Eiswürfeln gefüllt ist, Rum, Apricot Brandy, Triple Sec, Zitronensaft und Eiweiß mischen. Gut schütteln. In ein old-fashioned Glas abseihen, das fast mit Eiswürfeln gefüllt ist. Mit der Orangenscheibe garnieren.",
+"In uno shaker riempito a metà con cubetti di ghiaccio, unire il rum, il brandy di albicocche, il triple sec, il succo di limone e l'albume. Guarnire con la fetta d'arancia. Filtrare in un bicchiere vecchio stile quasi pieno di cubetti di ghiaccio. Agitare bene"
+        ],
+            "titleThumb":"https://www.thecocktaildb.com/images/media/drink/7ityp11582579598.jpg",
+            "Ingredients":[{"type":"Light rum",  "quantity":"1 1/2 oz "},
+            {"type":"Apricot brandy",    "quantity":"1 oz "},
+            {"type":"Triple sec","quantity":"1 tsp "},
+            {"type":"Lemon juice","quantity":"1/2 oz "},
+            {"type":"Egg white","quantity":"1 "},
+            {"type":"Orange", "quantity":"1 "}],
+ "strCreativeCommonsConfirmed":"Yes"
+}]
