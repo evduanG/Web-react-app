@@ -49,9 +49,7 @@ const Hero = ({ title, sortProducts, arry_intrv, sort }) => {
             <span
               className="product-filter-title"
               key={`hero-sort-product-filter-title`}
-            >
-              <h1></h1>
-            </span>
+            ></span>
             <li className="collection-sort" key={`hero-sort-collection-sort`}>
               <h2>Sort by:</h2>
               <select

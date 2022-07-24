@@ -48,7 +48,7 @@ function App() {
 
   const fetchProducts_1st = async () => {
     setLoading(true);
-    fetch(url)
+    fetch("/api")
       .then((res) => res.json())
       .then((dataR) => {
         setData(dataR);
