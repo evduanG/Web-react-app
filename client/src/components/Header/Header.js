@@ -5,13 +5,7 @@ import logo from "../../logo.jpg";
 import { MdOutlineAccountCircle } from "react-icons/md";
 import InputFeild from "./InputFeild/InputFeild";
 import SlidingCart from "./SlidingCart/SlidingCart";
-import ShopContext from "../../context/ShopContext";
-import { useContext } from "react";
 
-// pageing
-/**
- *
- */
 const Header = ({ resetData, alcoholCatgury }) => {
   return (
     <div className="header" key="header">
@@ -23,7 +17,8 @@ const Header = ({ resetData, alcoholCatgury }) => {
           <span className="header-left-logo-text" key="header-left-logo-text">
             {" "}
             <Link to="/" onClick={resetData}>
-              <h1>Cocktail bar</h1>
+              <h1>Ron Chen's</h1>
+              <h1> liquor store</h1>
             </Link>
           </span>
         </div>

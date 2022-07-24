@@ -2,9 +2,6 @@ import "./Cocktail.css";
 import { FaCocktail } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-/**
- *
- */
 const Cocktail = ({ props }) => {
   return (
     <div className="cocktail">

@@ -3,15 +3,10 @@ import { Link } from "react-router-dom";
 import "./AlcoholCatgurys.css";
 import Hero from "../Hero/Hreo";
 
-/**
- * A component that presents the alcohol according to its type
- * @param {} param0
- * @returns
- */
 const AlcoholCatgurys = ({ alcoholCatgury }) => {
   return (
     <div>
-      <Hero title={"Alcohol Catgury"} sort={true} />
+      <Hero title={"Alcohol Catgury"} sort={false} />
       <div>
         <div className="container">
           {alcoholCatgury.map((item) => {
