@@ -1,5 +1,4 @@
 // server/index.js
-
 const path = require("path");
 const express = require("express");
 const fs = require("fs");
@@ -8,63 +7,13 @@ const PORT = process.env.PORT || 5000;
 
 const app = express();
 const cors = require("cors");
-const { send } = require("process");
-const corsOptions = {
-  origin: "*",
-  credentials: true, //access-control-allow-credentials:true
-  optionSuccessStatus: 200,
-};
 
-app.use(cors(corsOptions)); // Use this after the variable declaration
-
-// Have Node serve the files for our built React app
-app.use(express.static(path.resolve(__dirname, "../client/build")));
-const initialTodos = [
-  {
-    id: 1,
-    title: "Throw garbage",
-    completed: false,
-  },
-  {
-    id: 2,
-    title: "Wash the dishes",
-    completed: false,
-  },
-];
-const store = {
-  async read() {
-    try {
-      await fs.access(fileName);
-      this.todos = JSON.parse((await fs.readFile(fileName)).toString());
-    } catch (e) {
-      this.todos = initialTodos;
-    }
-    return this.todos;
-  },
-  async save() {
-    await fs.writeFile(fileName, JSON.stringify(this.todos));
-  },
-  async getIndexById(id) {
-    try {
-      const todos = await this.read();
-      return todos.findIndex((todo) => todo.id === +id);
-    } catch (e) {
-      console.log(e);
-    }
-  },
-  async getNextTodoId() {
-    let maxId = 1;
-    const todos = await this.read();
-    todos.forEach((todo) => {
-      if (todo.id > maxId) maxId = todo.id;
-    });
-    return maxId + 1;
-  },
-  todos: [],
-};
 /*===================================================================
 ======get all data====get all data====get all data==get all data=====
 ====================================================================*/
+app.get("/", (req, res) => {
+  res.send("Hello from the server to start the client run npm run client");
+});
 app.get("/api", (req, res) => {
   fs.readFile("./server/Data.json", "utf8", (err, data) => {
     if (err) console.log("error!", err);

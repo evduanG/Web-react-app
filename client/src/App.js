@@ -1,5 +1,5 @@
-import { Link, Route, Routes } from "react-router-dom";
-import React, { useCallback, useState, useEffect, useMemo } from "react";
+import { Route, Routes } from "react-router-dom";
+import React, { useCallback, useState, useEffect } from "react";
 // path: liquor-store\src\App.js
 // pageing
 import Home from "./pages/Home";
@@ -11,18 +11,20 @@ import CocktailBook from "./pages/CocktailBook";
 import NoMatch from "./pages/NoMatch";
 import AlcoholCatgury from "./pages/AlcoholCatgury";
 import CocktailProductPage from "./pages/CocktailProductPage";
+import Search from "./pages/Search";
+import UserNoLogin from "./pages/UserNoLogin";
+import SingleProductPage from "./pages/SingleProductPage";
+
 // compmonents
 import Header from "./components/Header/Header";
 import AlcoholCatgurys from "./components/AlcoholCatgury/AlcoholCatgurys";
-import SingleProductPage from "./pages/SingleProductPage";
+import Login_Registe from "./components/Login_Registe/Login_Registe";
 
 import ShopContext from "./context/ShopContext";
-import Search from "./pages/Search";
-import Login_Registe from "./components/Login_Registe/Login_Registe";
-import { useRef } from "react";
-import FakeAdvertisement from "./components/FakeAdvertisement/FakeAdvertisement";
-import UserNoLogin from "./pages/UserNoLogin";
-//img import
+import CartContext from "./context/CartContext";
+import DataContext from "./context/DataContext";
+import YoutubeEmbed from "./components/YoutubeEmbed/YoutubeEmbed";
+// products data context
 
 function App() {
   /*=============================================================
@@ -41,91 +43,22 @@ function App() {
 
   // 1st time the data is loaded from the server
   useEffect(() => {
-    const fetchProducts_1st = async () => {
-      setLoading(true);
-      fetch(url)
-        .then((res) => res.json())
-        .then((dataR) => {
-          setData(dataR);
-          setProductsList(dataR.alcohol);
-          setCocktailBook(dataR.cocktailBook);
-          setShowProducts(dataR.alcohol.slice(0, 19));
-          setLoading(false);
-        })
-        .catch((err) => console.log(err));
-    };
     fetchProducts_1st();
   }, []);
 
-  const alcoholCatgury = [
-    {
-      id: 1,
-      title: "Vodka",
-      image:
-        "https://mediacore.kyuubi.it/anticaenotecagiulianelli/media/img/2020/8/8/164241-large-vodka-finlandia-40-lt-1.jpg",
-    },
-    {
-      id: 2,
-      title: "Gin",
-      image:
-        "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gin-brands-1648499521.jpg?crop=0.904xw:0.810xh;0.0455xw,0.0816xh&resize=980:*",
-    },
-    {
-      id: 3,
-      title: "Rum",
-      image:
-        "https://www.liquor.com/thmb/Uk23JgGzPc0Rrzil5vNNNjv8xO8=/665x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/LIQUORS-16-best-rums-4847125-final-bc06fe8d7e7b42c0a866f6a78ccb96dc.jpg",
-    },
-    {
-      id: 4,
-      title: "Tequila",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/15-09-26-RalfR-WLC-0244.jpg/330px-15-09-26-RalfR-WLC-0244.jpg",
-    },
-    {
-      id: 5,
-      title: "Whiskey",
-      image:
-        "https://cdn.istores.co.il/image/upload/c_limit,w_1200,h_630/v1641304503/clients/105943/36e9590372bfa6f7632f371568f54bf6d484f1e2.jpg",
-      Percent: 40,
-    },
-    {
-      id: 6,
-      title: "Brandy",
-      image:
-        "https://manofmany.com/wp-content/uploads/2019/07/10-Best-Brandy-Brands-to-Cap-Off-Your-Night-Assorted-Brandy-Bottle-Brands.jpg",
-    },
-    {
-      id: 7,
-      title: "Anise",
-      image:
-        "https://www.liquor.com/thmb/gcZde87t32DNfXM2vxHafQvBZUo=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/aniseliqueurs_main_720x720-781674d9697e4dce9bb89c21cfe02d9a.jpg",
-    },
-    {
-      id: 8,
-      title: "Liqueur",
-      image:
-        "https://chilledmagazine.com/wp-content/uploads/2015/02/OrangeLiqueurFeatImg-1500x793.jpg",
-      Percent: 40,
-    },
-    {
-      id: 9,
-      title: "Beer",
-      image:
-        "https://thumbs.dreamstime.com/z/bottles-famous-global-beer-brands-poznan-pol-mar-including-heineken-becks-bud-miller-corona-stella-artois-san-miguel-143170440.jpg",
-    },
-    {
-      id: 10,
-      title: "Wine",
-      image:
-        "https://static01.nyt.com/images/2021/12/12/dining/12pour14/12pour14-superJumbo.jpg?quality=75&auto=webp",
-    },
-    {
-      title: "Mixers",
-      image:
-        "https://m.media-amazon.com/images/I/81l9wmZNjCL._SX679_PIbundle-6,TopRight,0,0_SX679SY490SH20_.jpg",
-    },
-  ];
+  const fetchProducts_1st = async () => {
+    setLoading(true);
+    fetch(url)
+      .then((res) => res.json())
+      .then((dataR) => {
+        setData(dataR);
+        setProductsList(dataR.alcohol);
+        setCocktailBook(dataR.cocktailBook);
+        setShowProducts(dataR.alcohol.slice(0, 19));
+        setLoading(false);
+      })
+      .catch((err) => console.log(err));
+  };
 
   /*=============================================================
   ===cart=====cart=====cart=====cart=====cart=====cart=====cart==
@@ -266,70 +199,101 @@ function App() {
   /*=============================================================
   =
   ==============================================================*/
+  /**
+   */
 
-  return loading ? (
+  const configLoading = () => {
+    if (loading || typeof data === "undefined") {
+      console.log("configLoading is true");
+      return true;
+    }
+    return false;
+  };
+
+  return configLoading() ? (
     <loader />
   ) : (
     <ShopContext.Provider
       value={{
+        pageNumber,
+        setPageNumber,
+        setSearch,
+        search,
+        showProducts,
+        setLoading,
+        loading,
+        data,
+        sortProducts,
+        productsList,
+        cocktailBook,
+        setProductsList,
+        switchCategory,
         cart,
         changeQuantity,
         removeFromCart,
         addToCart,
-        setCart,
-        sortProducts,
-        productsList,
-        cocktailBook,
-        showProducts,
-        cocktailBook,
-        pageNumber,
-        setPageNumber,
-        setSearch,
-        data,
-        search,
-        setProductsList,
-        switchCategory,
+        setCart
       }}
     >
-      <Header
-        resetData={resetData}
-        alcoholCatgury={alcoholCatgury}
-        key="Header"
-      />
-
-      <Routes>
-        <Route path="/" element={<Home key="Home_element" />} key="Home" />
-        <Route
-          path="/about"
-          element={<About key="About_element" />}
-          key="About"
-        />
-        <Route path="/cart" element={<Cart key="Cart_element" />} key="Cart" />
-        <Route path="/alcohol">
-          <Route
-            index
-            element={<AlcoholCatgurys alcoholCatgury={alcoholCatgury} />}
+      <CartContext.Provider
+        value={{ cart, changeQuantity, removeFromCart, addToCart, setCart }}
+      >
+        <DataContext.Provider
+          value={{
+            data,
+            sortProducts,
+            productsList,
+            cocktailBook,
+            setProductsList,
+            switchCategory
+          }}
+        >
+          <Header
+            resetData={resetData}
+            alcoholCatgury={data.alcoholCatgury}
+            key="Header"
           />
-          {alcoholCatgury.map((Catgury) => (
+          <Routes>
+            <Route path="/" element={<Home key="Home_element" />} key="Home" />
             <Route
-              path={Catgury.title}
-              element={<Alcohol alcoholCatgury={Catgury.title} />}
+              path="/about"
+              element={<About key="About_element" />}
+              key="About"
             />
-          ))}
-        </Route>
-        <Route path="/alcohol/:id" element={<SingleProductPage />} />
-        <Route path="/account" element={<Login_Registe />} />
-        <Route
-          path="/account/stiling_credit_information"
-          element={<UserNoLogin />}
-        />
-        <Route path="/search" element={<Search />} />
-        <Route path="/cocktailbook" element={<CocktailBook />} />
-        <Route path="/cocktail/:id" element={<CocktailProductPage />} />
-        <Route path="/accessories" element={<Accessories />} />
-        <Route path="/accessories/:id" element={<SingleProductPage />} />
-        <Route path="*" element={<NoMatch />} />
-      </Routes>
+            <Route
+              path="/cart"
+              element={<Cart key="Cart_element" />}
+              key="Cart"
+            />
+            <Route path="/alcohol">
+              <Route
+                index
+                element={
+                  <AlcoholCatgurys alcoholCatgury={data.alcoholCatgury} />
+                }
+              />
+              {data.alcoholCatgury.map((Catgury) => (
+                <Route
+                  path={Catgury.title}
+                  element={<Alcohol alcoholCatgury={Catgury.title} />}
+                />
+              ))}
+            </Route>
+            <Route path="/alcohol/:id" element={<SingleProductPage />} />
+            <Route path="/account" element={<Login_Registe />} />
+            <Route
+              path="/account/stiling_credit_information"
+              element={<UserNoLogin />}
+            />
+            <Route path="/search" element={<Search />} />
+            <Route path="/cocktailbook" element={<CocktailBook />} />
+            <Route path="/cocktail/:id" element={<CocktailProductPage />} />
+            <Route path="/accessories" element={<Accessories />} />
+            <Route path="/accessories/:id" element={<SingleProductPage />} />
+            <Route path="*" element={<NoMatch />} />
+          </Routes>
+        </DataContext.Provider>
+      </CartContext.Provider>
     </ShopContext.Provider>
   );
 }

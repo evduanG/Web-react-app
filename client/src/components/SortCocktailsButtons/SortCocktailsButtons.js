@@ -1,3 +1,4 @@
+import React from "react";
 import "./SortCocktailsButtons.css";
 
 const SortCocktailsButtons = ({ arrayOfValues, title, handle }) => {

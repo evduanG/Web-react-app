@@ -1,3 +1,4 @@
+import React from "react";
 import Hero from "../components/Hero/Hreo";
 import { useState } from "react";
 import Products from "../components/Products/Products";

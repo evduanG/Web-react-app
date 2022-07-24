@@ -1,3 +1,4 @@
+import React from "react";
 import "./Login_Registe.css";
 
 import { useNavigate } from "react-router-dom";

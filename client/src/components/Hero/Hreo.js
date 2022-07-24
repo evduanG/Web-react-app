@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import alcohol_hero0 from "./img/alcohol_hero0.jpg";
 import alcohol_hero1 from "./img/alcohol_hero1.jpg";
 import alcohol_hero2 from "./img/alcohol_hero2.jpg";
@@ -17,7 +17,7 @@ const Hero = ({ title, sortProducts, arry_intrv, sort }) => {
     alcohol_hero3,
     alcohol_hero4,
     alcohol_hero5,
-    alcohol_hero6,
+    alcohol_hero6
   ];
   useEffect(() => {
     if (arry_intrv.length > 1) {
@@ -39,7 +39,7 @@ const Hero = ({ title, sortProducts, arry_intrv, sort }) => {
         backgroundRepeat: "no-repeat",
         width: window.innerWidth - 20,
         height: "350px",
-        backgroundSize: "cover",
+        backgroundSize: "cover"
       }}
     >
       <h1 key={`hero${title}-h`}>{title}</h1>

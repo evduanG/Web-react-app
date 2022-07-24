@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import "./DropBarComp.css";
 
 const DropBarComp = ({ arrayOfValues, title, handle }) => {

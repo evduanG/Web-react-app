@@ -1,3 +1,4 @@
+import React from "react";
 import "./Cocktails.css";
 import Cocktail from "./Cocktail/Cocktail";
 import { useContext } from "react";

@@ -1,3 +1,4 @@
+import React from "react";
 import "./FakeAdvertisement.css";
 import "./only today.mp4";
 

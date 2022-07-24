@@ -1,3 +1,4 @@
+import React from "react";
 import Hero from "../components/Hero/Hreo";
 import { AiFillDelete } from "react-icons/ai";
 import "./Cart.css";
@@ -5,8 +6,9 @@ import { useContext } from "react";
 import ShopContext from "../context/ShopContext";
 
 const Cart = () => {
-  const { cart, changeQuantity, removeFromCart, setCart } =
-    useContext(ShopContext);
+  const { cart, changeQuantity, removeFromCart, setCart } = useContext(
+    ShopContext
+  );
 
   return (
     <div>

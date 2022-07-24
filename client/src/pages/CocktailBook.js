@@ -1,3 +1,4 @@
+import React from "react";
 import Cocktails from "../components/Cocktails/Cocktails";
 import Hero from "../components/Hero/Hreo";
 import ShopContext from "../context/ShopContext";
@@ -5,8 +6,9 @@ import { useContext, useEffect, useState } from "react";
 import SortCocktailsButtons from "../components/SortCocktailsButtons/SortCocktailsButtons";
 
 const CocktailBook = () => {
-  const { data, setLoading, setPageNumber, cocktailBook } =
-    useContext(ShopContext);
+  const { data, setLoading, setPageNumber, cocktailBook } = useContext(
+    ShopContext
+  );
 
   const [cocktailBookList, setCocktailBookList] = useState([cocktailBook]);
   useEffect(() => {}, []);
@@ -82,7 +84,7 @@ const CocktailBook = () => {
       tagsArrObjct.push({
         name: tag,
         flag: false,
-        id: i,
+        id: i
       });
       i++;
     });
@@ -93,7 +95,7 @@ const CocktailBook = () => {
       alcoholArrObjct.push({
         name: alcohol,
         flag: false,
-        id: i,
+        id: i
       });
       i++;
     });

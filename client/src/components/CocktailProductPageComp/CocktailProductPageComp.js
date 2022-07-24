@@ -1,3 +1,4 @@
+import React from "react";
 import YoutubeEmbed from "../../components/YoutubeEmbed/YoutubeEmbed";
 import "./CocktailProductPageComp.css";
 const CocktailProductPageComp = ({ drink }) => {

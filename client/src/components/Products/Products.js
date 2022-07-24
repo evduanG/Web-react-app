@@ -1,10 +1,12 @@
+import React from "react";
 import "./Products.css";
 import Product from "../Product/Product";
 import ShopContext from "../../context/ShopContext";
 import { useContext } from "react";
 const Products = () => {
-  const { pageNumber, showProducts, productsList, setPageNumber } =
-    useContext(ShopContext);
+  const { pageNumber, showProducts, productsList, setPageNumber } = useContext(
+    ShopContext
+  );
   const max = Math.floor(productsList.length / 20);
   let pageing = [];
   for (let i = 0; i < max; i++) {
