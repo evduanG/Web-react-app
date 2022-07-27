@@ -1,7 +1,6 @@
 import "./Products.css";
 import Product from "../Product/Product";
 import { useContext } from "react";
-import DataContext from "../../context/DataContext";
 import ShopContext from "../../context/ShopContext";
 const Products = () => {
   const { pageNumber, setPageNumber, showProducts, productsList } = useContext(

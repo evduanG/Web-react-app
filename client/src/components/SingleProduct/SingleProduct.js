@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
 import "./SingleProduct.css";
 import { useContext } from "react";
 import ShopContext from "../../context/ShopContext";

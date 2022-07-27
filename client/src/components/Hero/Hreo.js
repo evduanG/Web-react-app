@@ -7,6 +7,7 @@ import alcohol_hero4 from "./img/alcohol_hero4.jpg";
 import alcohol_hero5 from "./img/alcohol_hero5.png";
 import alcohol_hero6 from "./img/alcohol_hero6.jpg";
 import "./Hero.css";
+import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 
 const Hero = ({ title, sortProducts, arry_intrv, sort }) => {
   const [banner, setBanner] = useState(0);
@@ -92,6 +93,7 @@ const Hero = ({ title, sortProducts, arry_intrv, sort }) => {
           </div>
         ) : null}
       </div>
+      <Breadcrumbs />
     </div>
   );
 };

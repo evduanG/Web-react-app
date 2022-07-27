@@ -6,17 +6,18 @@ import CartContext from "../../context/CartContext";
 function Product({ id, price, title, image, caytegory }) {
   const { addToCart } = useContext(CartContext);
   return (
-    <div className="product-card" key={`Product"$title`}>
-      <Link to={`/${caytegory}/${id}`}>
-        <div className="product-image">
+    <div className="product-card" key={`product-car_${id}`}>
+      <Link to={`/${caytegory}/${id}`} key={`product-car_${id}_link_Pagcom`}>
+        <div className="product-image" key={`product-car_${id}_product-image`}>
           <img src={image} alt={title} />
         </div>
       </Link>
       {caytegory !== "Cocktail" ? (
-        <div className="product-info">
-          <h3>{title}</h3>
-          <h3>{price} $ </h3>
+        <div className="product-info" key={`product-car_${id}_${title}_info`}>
+          <h3 key={`product-car_${id}_title`}>{title}</h3>
+          <h3 key={`product-car_${id}_price`}>{price} $ </h3>
           <button
+            key={`product-card_${id}_${title}_button_AddTo`}
             className="product-button"
             value={id}
             onClick={(e) => {
@@ -28,8 +29,8 @@ function Product({ id, price, title, image, caytegory }) {
           </button>
         </div>
       ) : (
-        <div className="product-info">
-          <h3>{title}</h3>
+        <div className="product-info" key={`product-car_${id}_${title}_info`}>
+          <h3 key={`product-car_${id}_title`}>{title}</h3>
         </div>
       )}
     </div>

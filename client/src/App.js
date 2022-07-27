@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import React, { useCallback, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 // path: liquor-store\src\App.js
 // pageing
 import Home from "./pages/Home";
@@ -9,7 +9,6 @@ import Accessories from "./pages/Accessories";
 import Alcohol from "./pages/Alcohol";
 import CocktailBook from "./pages/CocktailBook";
 import NoMatch from "./pages/NoMatch";
-import AlcoholCatgury from "./pages/AlcoholCatgury";
 import CocktailProductPage from "./pages/CocktailProductPage";
 import Search from "./pages/Search";
 import UserNoLogin from "./pages/UserNoLogin";
@@ -23,7 +22,6 @@ import Login_Registe from "./components/Login_Registe/Login_Registe";
 import ShopContext from "./context/ShopContext";
 import CartContext from "./context/CartContext";
 import DataContext from "./context/DataContext";
-import YoutubeEmbed from "./components/YoutubeEmbed/YoutubeEmbed";
 // products data context
 
 function App() {
@@ -38,10 +36,7 @@ function App() {
   const [cocktailBook, setCocktailBook] = useState([]); // Will contain all the cocktails that can be displayed by the filter
 
   const [loading, setLoading] = useState(false); // Will be true when the data is loading from the server
-  const [categorySelect, setCategorySelect] = useState("All-Categories");
-  const [url, setUrl] = useState("http://localhost:5000/api");
 
-  // 1st time the data is loaded from the server
   useEffect(() => {
     fetchProducts_1st();
   }, []);
@@ -232,7 +227,8 @@ function App() {
         changeQuantity,
         removeFromCart,
         addToCart,
-        setCart
+        setCart,
+        resetData
       }}
     >
       <CartContext.Provider

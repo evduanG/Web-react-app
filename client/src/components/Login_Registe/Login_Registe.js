@@ -1,10 +1,9 @@
-import React from "react";
 import "./Login_Registe.css";
 
 import { useNavigate } from "react-router-dom";
 
 const Login_Registe = () => {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
     const { email, password } = e.target.elements;
@@ -31,7 +30,8 @@ const Login_Registe = () => {
     navigate("/");
   };
 
-  const handleForm = () => {
+  const handleForm = (e) => {
+    console.log("handleForm", e);
     navigate("/account/stiling_credit_information");
   };
 

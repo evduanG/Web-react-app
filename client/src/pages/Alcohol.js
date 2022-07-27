@@ -1,9 +1,6 @@
 import React from "react";
 import Hero from "../components/Hero/Hreo";
-import { useState } from "react";
 import Products from "../components/Products/Products";
-import { Link, Outlet } from "react-router-dom";
-import { useParams } from "react-router-dom";
 import ShopContext from "../context/ShopContext";
 import { useContext, useEffect } from "react";
 
