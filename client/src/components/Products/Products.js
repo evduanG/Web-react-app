@@ -32,6 +32,7 @@ const Products = () => {
               image={item.image}
               Percent={item.Percent}
               caytegory={item.category}
+              subcategory={item.subcategory}
             />
           );
         })}

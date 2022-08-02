@@ -18,7 +18,7 @@ import SingleProductPage from "./pages/SingleProductPage";
 import Header from "./components/Header/Header";
 import AlcoholCatgurys from "./components/AlcoholCatgury/AlcoholCatgurys";
 import Login_Registe from "./components/Login_Registe/Login_Registe";
-
+import Loader from "./components/Loader/Loader";
 import ShopContext from "./context/ShopContext";
 import CartContext from "./context/CartContext";
 import DataContext from "./context/DataContext";
@@ -34,7 +34,7 @@ function App() {
   const [showProducts, setShowProducts] = useState([]); // Will contain the products that are displayed on the current page (productsList) maximun of 20 products
 
   const [cocktailBook, setCocktailBook] = useState([]); // Will contain all the cocktails that can be displayed by the filter
-
+  const [categorys, setCategorys] = useState([]);
   const [loading, setLoading] = useState(false); // Will be true when the data is loading from the server
 
   useEffect(() => {
@@ -50,6 +50,9 @@ function App() {
         setProductsList(dataR.alcohol);
         setCocktailBook(dataR.cocktailBook);
         setShowProducts(dataR.alcohol.slice(0, 19));
+        setCategorys(configCatgury(dataR));
+        console.log("categorys", categorys);
+        console.log(categorys[0].category);
         setLoading(false);
       })
       .catch((err) => console.log(err));
@@ -114,7 +117,6 @@ function App() {
     let arr = [...productsList];
     switch (sortBy) {
       case "Percentage, low to high": // id
-        console.log("sortProducts", sortBy);
         setProductsList(arr.sort((a, b) => a.Percent - b.Percent));
         break;
       case "Percentage, high to low": // Percentage
@@ -125,7 +127,6 @@ function App() {
         break;
       case "Alphabetically, Z-A":
         setProductsList(arr.sort((a, b) => b.title.localeCompare(a.title)));
-        console.log(productsList);
         break;
       case "Price, low to high":
         setProductsList(arr.sort((a, b) => a.price - b.price));
@@ -151,7 +152,6 @@ function App() {
     console.log("switchCategory", category, subcategory);
     setLoading(true);
     if (category === "accessories") {
-      console.log("accessories if");
       const arr = data.alcohol.filter((item) => {
         return item.category.toLowerCase() === "accessories";
       });
@@ -163,7 +163,6 @@ function App() {
       });
       setProductsList(arr);
     }
-    console.log("productsList", productsList);
     setLoading(false);
   };
   const [search, setSearch] = useState("");
@@ -181,12 +180,8 @@ function App() {
   //Function  Filter the products by  pageNumber use to change the page
   useEffect(() => {
     setLoading(true);
-    console.log("try 1 pageNumber  useEffect");
-    console.log("pageNumber", pageNumber);
     const arr = productsList.slice(pageNumber * 20, pageNumber * 20 + 19);
-    console.log("showProducts", showProducts);
     setShowProducts(arr);
-    console.log("showProducts", showProducts);
     window.scrollTo(0, 0);
     setLoading(false);
   }, [pageNumber]);
@@ -196,17 +191,72 @@ function App() {
   ==============================================================*/
   /**
    */
+  const configCatgury = (dataR) => {
+    let category = [];
+    let arrToFindSubcategory = [];
+    console.log("dataR", dataR);
+    dataR.alcohol.map((element) => {
+      let index = category.findIndex(
+        (elementInCategory) => elementInCategory.category === element.category
+      );
+
+      if (index >= 0) {
+        if (!arrToFindSubcategory.includes(element.subcategory)) {
+          arrToFindSubcategory.push(element.subcategory);
+          let subCategoryToAdd = {
+            id: arrToFindSubcategory.length,
+            subcategory: element.subcategory,
+            image: element.image
+          };
+          category[index].subcategory.push({
+            id: arrToFindSubcategory.length,
+            subcategory: element.subcategory,
+            image: element.image
+          });
+        }
+      } else {
+        arrToFindSubcategory.push(element.subcategory);
+        // element.category is not in category
+        let categoryToAdd = {
+          id: category.length,
+          category: element.category,
+          image: element.image,
+          subcategory: [
+            {
+              id: arrToFindSubcategory.length,
+              subcategory: element.subcategory,
+              image: element.image
+            }
+          ]
+        };
+        category.push({
+          id: category.length,
+          category: element.category,
+          image: element.image,
+          subcategory: [
+            {
+              id: arrToFindSubcategory.length,
+              subcategory: element.subcategory,
+              image: element.image
+            }
+          ]
+        });
+      }
+    });
+    console.log("category in func ", category);
+    return category;
+  };
 
   const configLoading = () => {
     if (loading || typeof data === "undefined") {
-      console.log("configLoading is true");
+      console.log("config Loading is true");
       return true;
     }
     return false;
   };
 
   return configLoading() ? (
-    <loader />
+    <Loader />
   ) : (
     <ShopContext.Provider
       value={{
@@ -244,6 +294,7 @@ function App() {
             switchCategory
           }}
         >
+          {console.log(categorys)}
           <Header
             resetData={resetData}
             alcoholCatgury={data.alcoholCatgury}
@@ -261,31 +312,47 @@ function App() {
               element={<Cart key="Cart_element" />}
               key="Cart"
             />
-            <Route path="/alcohol">
-              <Route
-                index
-                element={
-                  <AlcoholCatgurys alcoholCatgury={data.alcoholCatgury} />
-                }
-              />
-              {data.alcoholCatgury.map((Catgury) => (
-                <Route
-                  path={Catgury.title}
-                  element={<Alcohol alcoholCatgury={Catgury.title} />}
-                />
-              ))}
-            </Route>
-            <Route path="/alcohol/:id" element={<SingleProductPage />} />
+            {categorys.map((element) => {
+              return (
+                <>
+                  <Route path={`/${element.category}`} key={element.id}>
+                    <Route
+                      index
+                      element={<AlcoholCatgurys argCatgury={element} />}
+                    />
+                    {element.subcategory.map((subcategory) => {
+                      return (
+                        <>
+                          <Route
+                            path={subcategory.subcategory}
+                            element={
+                              <Alcohol
+                                alcoholCatgury={subcategory.subcategory}
+                              />
+                            }
+                            key={subcategory.key}
+                          />
+                          <Route
+                            path={`/${element.category}/${subcategory.subcategory}/:id`}
+                            element={<SingleProductPage />}
+                          />
+                        </>
+                      );
+                    })}
+                  </Route>
+                  ;
+                </>
+              );
+            })}
+            <Route path="/cocktail" element={<CocktailBook />} />
+            <Route path="/cocktail/:id" element={<CocktailProductPage />} />
             <Route path="/account" element={<Login_Registe />} />
             <Route
               path="/account/stiling_credit_information"
               element={<UserNoLogin />}
             />
             <Route path="/search" element={<Search />} />
-            <Route path="/cocktailbook" element={<CocktailBook />} />
-            <Route path="/cocktail/:id" element={<CocktailProductPage />} />
-            <Route path="/accessories" element={<Accessories />} />
-            <Route path="/accessories/:id" element={<SingleProductPage />} />
+
             <Route path="*" element={<NoMatch />} />
           </Routes>
         </DataContext.Provider>

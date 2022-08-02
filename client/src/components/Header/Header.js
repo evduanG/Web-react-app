@@ -56,7 +56,7 @@ const Header = ({ resetData, alcoholCatgury }) => {
             </div>
           </li>
           <li className="dropdown" key="li_cocktailbook">
-            <Link to="/cocktailbook">CocktailBook</Link>
+            <Link to="/Cocktail">CocktailBook</Link>
           </li>
           <li className="dropdown" key="li_accessories">
             <Link to="/accessories">Accessories</Link>

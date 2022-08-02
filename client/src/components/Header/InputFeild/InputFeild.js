@@ -28,15 +28,7 @@ const InputFeild = () => {
         {" "}
         <BsSearch />
       </button>
-      <input
-        type="input"
-        placeholder=""
-        className="input__box"
-        ref={input}
-        onChange={(e) => {
-          console.log(input.current.value);
-        }}
-      />
+      <input type="input" placeholder="" className="input__box" ref={input} />
     </form>
   );
 };

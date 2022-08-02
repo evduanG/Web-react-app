@@ -1,5 +1,5 @@
 import "./Login_Registe.css";
-
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const Login_Registe = () => {

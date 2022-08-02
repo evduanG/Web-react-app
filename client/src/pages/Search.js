@@ -11,15 +11,11 @@ const Search = () => {
     const prodcrt = data.alcohol;
     const cocktail = data.cocktailBook;
     const list = [...prodcrt, ...cocktail];
-    const regex = `/${search}/gi`;
-    console.log("regex", regex);
-    console.log("search atribut ", search);
-    console.log("list", list);
+    //const regex = `/${search}/gi`;
+
     let arr = list.filter((item) => {
       return item.title.toLowerCase().includes(search.toLowerCase());
     });
-    console.log(list.filter((asd) => asd.title.toLowerCase().includes(search)));
-    console.log("arr from Search", arr);
     setProductsList(arr);
   }, [search]);
   return (

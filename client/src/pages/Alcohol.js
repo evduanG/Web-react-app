@@ -8,7 +8,6 @@ const Alcohol = ({ alcoholCatgury }) => {
   const { switchCategory } = useContext(ShopContext);
   useEffect(() => {
     switchCategory("alcohol", alcoholCatgury);
-    console.log("alcohol");
   }, [alcoholCatgury]);
 
   return (

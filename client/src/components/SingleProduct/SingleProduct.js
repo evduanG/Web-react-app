@@ -19,7 +19,6 @@ const SingleProduct = ({ product }) => {
           value={product.id}
           onClick={(e) => {
             try {
-              console.log(e.currentTarget.value);
               addToCart(e.currentTarget.value);
             } catch (error) {
               console.log(error);

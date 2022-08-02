@@ -7,7 +7,6 @@ const CocktailBook = () => {
   //  const { data, cocktailBook  , setProductsList,} = useContext(DataContext);
   //setPageNumber setLoading,
   const { cocktailBook, setProductsList } = useContext(ShopContext);
-  console.log("cocktailBook", cocktailBook);
   const [cocktailBookList, setCocktailBookList] = useState([cocktailBook]);
 
   useEffect(() => {
