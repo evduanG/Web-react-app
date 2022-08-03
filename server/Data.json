@@ -1434,42 +1434,6 @@
   ],
   "cocktailBook": [
     {
-      "id": "11005",
-      "title": "Dry Martini",
-      "titleAlternate": null,
-      "tags": ["IBA", "Classic", "Christmas", "Alcoholic"],
-      "strVideo": "hYZKlE8qCrk",
-      "category": "Cocktail",
-      "subcategory": "Cocktail",
-      "strIBA": "Unforgettables",
-      "strAlcoholic": "Alcoholic",
-      "strGlass": "Cocktail glass",
-      "preparationStages": [
-        {
-          "step": "Straight: Pour all ingredients into mixing glass with ice cubes. Stir well. Strain in chilled martini cocktail glass. Squeeze oil from lemon peel onto the drink, or garnish with olive."
-        },
-        {
-          "step": "Dritto: Versare tutti gli ingredienti nel mixing glass con cubetti di ghiaccio. Mescolare bene. Filtrare in una coppetta da cocktail Martini ghiacciata. Spremi l'olio della scorza di limone sulla bevanda o guarnisci con l'oliva."
-        }
-      ],
-      "image": "https://www.thecocktaildb.com/images/media/drink/6ck9yi1589574317.jpg",
-      "Ingredients": [
-        {
-          "type": "Gin",
-          "quantity": "1 2/3 oz "
-        },
-        {
-          "type": "Dry Vermouth",
-          "quantity": "1/3 oz "
-        },
-        {
-          "type": "Olive",
-          "quantity": "1 "
-        }
-      ],
-      "strCreativeCommonsConfirmed": "Yes"
-    },
-    {
       "id": "11028",
       "title": "Amaretto Stinger",
       "tags": ["Alcoholic", "Cocktail"],
