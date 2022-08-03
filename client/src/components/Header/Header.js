@@ -6,7 +6,7 @@ import { MdOutlineAccountCircle } from "react-icons/md";
 import InputFeild from "./InputFeild/InputFeild";
 import SlidingCart from "./SlidingCart/SlidingCart";
 
-const Header = ({ resetData, alcoholCatgury }) => {
+const Header = ({ resetData, alcoholCatgury, categorys }) => {
   return (
     <div className="header" key="header">
       <div className="header-left" key="header-left">
@@ -40,25 +40,32 @@ const Header = ({ resetData, alcoholCatgury }) => {
               Cart
             </Link>
           </li>
-          <li className="dropdown" key={"alcoholdropdown"}>
-            <Link to="/alcohol" key="Link-index-alcohol">
-              Alcohol
-            </Link>
-            <div className="dropdown-content">
-              {alcoholCatgury.map((item) => {
-                return (
-                  <li key={`LI_drdn${item.id}`}>
-                    <Link to={`/alcohol/${item.title}`}>{item.title}</Link>
-                  </li>
-                );
-              })}
-            </div>
-          </li>
+          {categorys.map((category) => {
+            return (
+              <li className="dropdown" key={`${category.category}dropdown`}>
+                <Link
+                  to={`/${category.category}`}
+                  key={`link-li-to${category.category}`}
+                >
+                  {category}
+                </Link>
+                <div
+                  className="dropdown-content"
+                  key={`${category}-dropdown-content`}
+                >
+                  {category.subcategory.map((item) => (
+                    <li key={`LI_drdn${item.id}`}>
+                      <Link to={`/${category.category}/${item.subcategory}`}>
+                        {item.title}
+                      </Link>
+                    </li>
+                  ))}
+                </div>
+              </li>
+            );
+          })}
           <li className="dropdown" key="li_cocktailbook">
             <Link to="/Cocktail">CocktailBook</Link>
-          </li>
-          <li className="dropdown" key="li_accessories">
-            <Link to="/accessories">Accessories</Link>
           </li>
         </div>
       </div>
