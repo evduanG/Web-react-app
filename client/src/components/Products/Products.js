@@ -6,7 +6,6 @@ const Products = () => {
   const { pageNumber, setPageNumber, showProducts, productsList } = useContext(
     ShopContext
   );
-  console.log("productsList", productsList);
 
   const max = Math.floor(productsList.length / 20);
   let pageing = [];
@@ -47,12 +46,12 @@ const Products = () => {
                 <button
                   value={page_i}
                   className="button-page_i"
-                  key={`page_i${page_i}`}
+                  key={`page_i${page_i}button`}
                   onClick={(e) => {
                     setPageNumber(e.currentTarget.value);
                   }}
                 >
-                  <h3>{page_i}</h3>
+                  <h3  key={`page_i${page_i}h3`}>{page_i}</h3>
                 </button>
               );
             }
