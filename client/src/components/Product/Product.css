@@ -1,26 +1,24 @@
 .product-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 300px;
-  max-height: fit-content;
-  padding: 2%;
-  margin: 2%;
-  flex: 1 1 16%;
-  border: 3px solid rgb(0 0 0);
-  background-color: rgb(196 196 196 / 50%);
-  box-shadow: inset 2px 2px 2px 2px rgb(0 0 0 / 58%);
-  border-radius: 50px;
+    display: block;
+    padding: 1%;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    border: 1px solid;
+    margin: 1%;
+    flex: 1 1 16%;
+}
+.product-card:hover {
+  box-shadow: 10px 10px 8px #888888;
 }
 
 .product-image img {
   max-block-size: 200px;
   background: white;
-  border: 2px solid #27077f;
 }
-.product-image img:hover {
-  opacity: 0.5;
-}
+
 .product-image {
   height: 200px;
   width: 200px;
@@ -48,20 +46,19 @@
   }
 }
 .product-button {
-  font-size: 20px;
-  font-style: italic;
-  font-family: monospace;
-  background: black;
-  text-align: center;
-  color: white;
-  padding: 10px;
-  box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 25%);
-  border-radius: 25px;
-  cursor: pointer;
+    width: -webkit-fill-available;
+    font-size: 20px;
+    font-family: monospace;
+    background: #92231d;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
 }
 .product-button:hover {
-  background: rgb(77, 72, 86);
-  color: rgb(255, 255, 255);
+ background: rgb(255 255 255);
+  color: rgb(163 0 0);
 }
 .product-button:checked {
   background: rgb(67, 66, 69);
