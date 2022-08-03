@@ -51,8 +51,6 @@ function App() {
         setCocktailBook(dataR.cocktailBook);
         setShowProducts(dataR.alcohol.slice(0, 19));
         setCategorys(configCatgury(dataR));
-        console.log("categorys", categorys);
-        console.log(categorys[0].category);
         setLoading(false);
       })
       .catch((err) => console.log(err));
@@ -103,7 +101,6 @@ function App() {
   //Function  Clear the cart
   const resetData = () => {
     setLoading(true);
-    console.log("resetData");
     setProductsList(data.alcohol);
     setPageNumber(0);
     setLoading(false);
@@ -113,7 +110,6 @@ function App() {
   ==============================================================*/
   const sortProducts = (sortBy) => {
     setLoading(true);
-    console.log("sortProducts", sortBy);
     let arr = [...productsList];
     switch (sortBy) {
       case "Percentage, low to high": // id
@@ -149,7 +145,6 @@ function App() {
   };
   //Function  Filter the products by category
   const switchCategory = (category, subcategory) => {
-    console.log("switchCategory", category, subcategory);
     setLoading(true);
     if (category === "accessories") {
       const arr = data.alcohol.filter((item) => {
@@ -194,7 +189,6 @@ function App() {
   const configCatgury = (dataR) => {
     let category = [];
     let arrToFindSubcategory = [];
-    console.log("dataR", dataR);
     dataR.alcohol.map((element) => {
       let index = category.findIndex(
         (elementInCategory) => elementInCategory.category === element.category
@@ -243,7 +237,6 @@ function App() {
         });
       }
     });
-    console.log("category in func ", category);
     return category;
   };
 
@@ -294,7 +287,6 @@ function App() {
             switchCategory
           }}
         >
-          {console.log(categorys)}
           <Header
             resetData={resetData}
             alcoholCatgury={data.alcoholCatgury}
