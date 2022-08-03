@@ -16,7 +16,7 @@ const Header = ({ resetData, alcoholCatgury }) => {
           </samp>
           <span className="header-left-logo-text" key="header-left-logo-text">
             <Link to="/" onClick={resetData}>
-              <h1> liquor store</h1>
+              <h1 key="shoptitle"> liquor store</h1>
             </Link>
           </span>
         </div>
