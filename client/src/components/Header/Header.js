@@ -6,7 +6,7 @@ import { MdOutlineAccountCircle } from "react-icons/md";
 import InputFeild from "./InputFeild/InputFeild";
 import SlidingCart from "./SlidingCart/SlidingCart";
 
-const Header = ({ resetData, alcoholCatgury, categorys }) => {
+const Header = ({ resetData, categorys }) => {
   console.log(categorys);
   return (
     <div className="header" key="header">
@@ -46,28 +46,30 @@ const Header = ({ resetData, alcoholCatgury, categorys }) => {
               console.log(subcategory);
               return;
             });
-            return;
-          })}
-          {categorys.map((category) => {
             return (
               <li className="dropdown" key={`${category.category}dropdown`}>
                 <Link
                   to={`/${category.category}`}
                   key={`link-li-to${category.category}`}
                 >
-                  {category}
+                  {category.category}
                 </Link>
                 <div
                   className="dropdown-content"
                   key={`${category}-dropdown-content`}
                 >
-                  {category.subcategory.map((item) => (
-                    <li key={`LI_drdn${item.id}`}>
-                      <Link to={`/${category.category}/${item.subcategory}`}>
-                        {item.subcategory}
-                      </Link>
-                    </li>
-                  ))}
+                  {category.subcategory.map((subcategory) => {
+                    return (
+                      <li>
+                        <Link
+                          to={`/${category.category}/${subcategory.subcategory}`}
+                          key={`${category.category}-${subcategory.subcategory}`}
+                        >
+                          {subcategory.subcategory}
+                        </Link>
+                      </li>
+                    );
+                  })}
                 </div>
               </li>
             );
