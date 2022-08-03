@@ -12,7 +12,6 @@ const Breadcrumbs = () => {
   });
 
   let strPhat = "";
-  console.log("strPhat", strPhat);
   return (
     <nav className="breadcrumbs">
       <div className="breadcrumbs__item" key="div_breadcrumbs__item">
