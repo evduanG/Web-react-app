@@ -9,7 +9,7 @@ function Product({ id, price, title, image, caytegory, subcategory }) {
     return caytegory === "Cocktail";
   };
   const configPath = () => {
-    if (isCocktail) {
+    if (isCocktail()) {
       return `/${caytegory}/${id}`;
     } else {
       return `/${caytegory}/${subcategory}/${id}`;
