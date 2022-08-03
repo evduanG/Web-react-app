@@ -6,7 +6,7 @@ import { MdOutlineAccountCircle } from "react-icons/md";
 import InputFeild from "./InputFeild/InputFeild";
 import SlidingCart from "./SlidingCart/SlidingCart";
 
-const Header = ({ resetData, categorys }) => {
+const Header = ({ resetData, alcoholCatgury, categorys }) => {
   console.log(categorys);
   return (
     <div className="header" key="header">
@@ -84,3 +84,29 @@ const Header = ({ resetData, categorys }) => {
   );
 };
 export default Header;
+/*
+ {categorys.array.map((category) => {
+            return (
+              <li className="dropdown" key={`${category.category}dropdown`}>
+                <Link
+                  to={`/${category.category}`}
+                  key={`link-li-to${category.category}`}
+                >
+                  {category}
+                </Link>
+                <div
+                  className="dropdown-content"
+                  key={`${category}-dropdown-content`}
+                >
+                  {category.subcategory.array.map((item) => (
+                    <li key={`LI_drdn${item.id}`}>
+                      <Link to={`/${category.category}/${item.subcategory}`}>
+                        {item.subcategory}
+                      </Link>
+                    </li>
+                  ))}
+                </div>
+              </li>
+            );
+          })}
+*/
