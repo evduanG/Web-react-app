@@ -7,6 +7,7 @@ import InputFeild from "./InputFeild/InputFeild";
 import SlidingCart from "./SlidingCart/SlidingCart";
 
 const Header = ({ resetData, alcoholCatgury, categorys }) => {
+  console.log(categorys);
   return (
     <div className="header" key="header">
       <div className="header-left" key="header-left">
@@ -41,6 +42,13 @@ const Header = ({ resetData, alcoholCatgury, categorys }) => {
             </Link>
           </li>
           {categorys.map((category) => {
+            category.subcategory.map((subcategory) => {
+              console.log(subcategory);
+              return;
+            });
+            return;
+          })}
+          {categorys.map((category) => {
             return (
               <li className="dropdown" key={`${category.category}dropdown`}>
                 <Link
@@ -56,7 +64,7 @@ const Header = ({ resetData, alcoholCatgury, categorys }) => {
                   {category.subcategory.map((item) => (
                     <li key={`LI_drdn${item.id}`}>
                       <Link to={`/${category.category}/${item.subcategory}`}>
-                        {item.title}
+                        {item.subcategory}
                       </Link>
                     </li>
                   ))}
@@ -64,6 +72,7 @@ const Header = ({ resetData, alcoholCatgury, categorys }) => {
               </li>
             );
           })}
+
           <li className="dropdown" key="li_cocktailbook">
             <Link to="/Cocktail">CocktailBook</Link>
           </li>
