@@ -4,23 +4,17 @@
   align-items: center;
   padding: 2%;
   flex: 1 1 16%;
-  border: 10px solid rgb(63 59 59);
-  background-color: rgb(0 0 0 / 50%);
-  box-shadow: inset 2px 2px 2px 2px rgb(0 0 0 / 58%);
-  border-radius: 52px;
+  border: 1px solid rgb(63 59 59);
+  background-color: rgb(255 249 249 / 50%)
+  border-radius: 0px;
 }
 
 .cocktailS-img img {
-  max-block-size: 200px;
-
+  max-block-size: 20%;
   border: 2px solid #27077f;
 }
 .cocktail-img img:hover {
   opacity: 0.5;
-}
-.cocktail-img {
-  height: 200px;
-  width: 200px;
 }
 .cocktail-info {
   display: flex;
@@ -34,7 +28,6 @@
   font-size: 3em;
   font-weight: bold;
   font-family: cursive;
-
   color: #27077f;
 }
 
