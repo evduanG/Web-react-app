@@ -8,7 +8,7 @@ import ShopContext from "../../../context/ShopContext";
 /**
  *
  */
-const SlidingCart = ({}) => {
+const SlidingCart = () => {
   const { cart, changeQuantity, removeFromCart } = useContext(ShopContext);
   const totalPrice = cart.reduce((total, item) => {
     return total + item.prodct.price * item.quantity;

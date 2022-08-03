@@ -10,10 +10,15 @@
   text-transform: uppercase;
   font-size: 50px;
   color: #9b99fa;
-  -webkit-text-stroke-width: 5.5px;
-  -webkit-text-stroke-color: #3764f5;
-  display: flex;
-  justify-content: flex-start;
-  text-shadow: 0 0 40px #fa1049, 0 0 40px #3f307a, 0 0 40px #005a7dc9;
   flex-direction: row;
+}
+
+.hero-ccontent {
+  display: flex;
+  align-items: flex-direction;
+  flex-direction: row-reverse;
+}
+.product-filter {
+  display: block;
+  flex-direction: column;
 }
