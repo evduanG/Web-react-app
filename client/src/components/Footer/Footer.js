@@ -6,7 +6,6 @@ const Footer = () => {
    <div class="dummy_page">
   Mobile responsive footer
 </div>
-<!-- FOOTER START -->
 <div class="footer">
   <div class="contain">
   <div class="col">
