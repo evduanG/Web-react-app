@@ -287,9 +287,10 @@ function App() {
             switchCategory
           }}
         >
-          <Header
+                <Header
             resetData={resetData}
             alcoholCatgury={data.alcoholCatgury}
+            categorys={categorys}
             key="Header"
           />
           <div id="App-page" key="App-page">
