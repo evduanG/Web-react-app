@@ -11,7 +11,7 @@
   margin: auto;
 }
 
-.sliding-content 
+.sliding-content {
   display: none;
   position: absolute;
   height: 400px;
