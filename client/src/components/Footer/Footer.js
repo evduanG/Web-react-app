@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.css";
 
 const Footer = () => {
-  return (
+  return (<>
    <div class="dummy_page">
   Mobile responsive footer
 </div>
@@ -69,6 +69,7 @@ const Footer = () => {
 <div class="clearfix"></div>
 </div>
 </div>
+          </>
   );
 };
 export default Footer;
