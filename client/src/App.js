@@ -13,7 +13,7 @@ import CocktailProductPage from "./pages/CocktailProductPage";
 import Search from "./pages/Search";
 import UserNoLogin from "./pages/UserNoLogin";
 import SingleProductPage from "./pages/SingleProductPage";
-
+import Footer from "./components/Footer/Footer";
 // compmonents
 import Header from "./components/Header/Header";
 import AlcoholCatgurys from "./components/AlcoholCatgury/AlcoholCatgurys";
@@ -292,61 +292,68 @@ function App() {
             alcoholCatgury={data.alcoholCatgury}
             key="Header"
           />
-          <Routes>
-            <Route path="/" element={<Home key="Home_element" />} key="Home" />
-            <Route
-              path="/about"
-              element={<About key="About_element" />}
-              key="About"
-            />
-            <Route
-              path="/cart"
-              element={<Cart key="Cart_element" />}
-              key="Cart"
-            />
-            {categorys.map((element) => {
-              return (
-                <>
-                  <Route path={`/${element.category}`} key={element.id}>
-                    <Route
-                      index
-                      element={<AlcoholCatgurys argCatgury={element} />}
-                    />
-                    {element.subcategory.map((subcategory) => {
-                      return (
-                        <>
-                          <Route
-                            path={subcategory.subcategory}
-                            element={
-                              <Alcohol
-                                alcoholCatgury={subcategory.subcategory}
-                              />
-                            }
-                            key={subcategory.key}
-                          />
-                          <Route
-                            path={`/${element.category}/${subcategory.subcategory}/:id`}
-                            element={<SingleProductPage />}
-                          />
-                        </>
-                      );
-                    })}
-                  </Route>
-                  ;
-                </>
-              );
-            })}
-            <Route path="/cocktail" element={<CocktailBook />} />
-            <Route path="/cocktail/:id" element={<CocktailProductPage />} />
-            <Route path="/account" element={<Login_Registe />} />
-            <Route
-              path="/account/stiling_credit_information"
-              element={<UserNoLogin />}
-            />
-            <Route path="/search" element={<Search />} />
+          <div id="App-page" key="App-page">
+            <Routes>
+              <Route
+                path="/"
+                element={<Home key="Home_element" />}
+                key="Home"
+              />
+              <Route
+                path="/about"
+                element={<About key="About_element" />}
+                key="About"
+              />
+              <Route
+                path="/cart"
+                element={<Cart key="Cart_element" />}
+                key="Cart"
+              />
+              {categorys.map((element) => {
+                return (
+                  <>
+                    <Route path={`/${element.category}`} key={element.id}>
+                      <Route
+                        index
+                        element={<AlcoholCatgurys argCatgury={element} />}
+                      />
+                      {element.subcategory.map((subcategory) => {
+                        return (
+                          <>
+                            <Route
+                              path={subcategory.subcategory}
+                              element={
+                                <Alcohol
+                                  alcoholCatgury={subcategory.subcategory}
+                                />
+                              }
+                              key={subcategory.key}
+                            />
+                            <Route
+                              path={`/${element.category}/${subcategory.subcategory}/:id`}
+                              element={<SingleProductPage />}
+                            />
+                          </>
+                        );
+                      })}
+                    </Route>
+                    ;
+                  </>
+                );
+              })}
+              <Route path="/cocktail" element={<CocktailBook />} />
+              <Route path="/cocktail/:id" element={<CocktailProductPage />} />
+              <Route path="/account" element={<Login_Registe />} />
+              <Route
+                path="/account/stiling_credit_information"
+                element={<UserNoLogin />}
+              />
+              <Route path="/search" element={<Search />} />
 
-            <Route path="*" element={<NoMatch />} />
-          </Routes>
+              <Route path="*" element={<NoMatch />} />
+            </Routes>
+          </div>
+          <Footer />
         </DataContext.Provider>
       </CartContext.Provider>
     </ShopContext.Provider>

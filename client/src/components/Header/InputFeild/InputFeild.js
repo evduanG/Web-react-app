@@ -4,15 +4,11 @@ import "./InputFeild.css";
 import ShopContext from "../../../context/ShopContext";
 import { useContext } from "react";
 
-import { useSearchParams, Navigate, useNavigate } from "react-router-dom";
-import Products from "../../Products/Products";
+import { useNavigate } from "react-router-dom";
 
-/**
- *
- */
 const InputFeild = () => {
   let navigate = useNavigate();
-  const { setSearch, search } = useContext(ShopContext);
+  const { setSearch } = useContext(ShopContext);
   let input = useRef(null);
 
   async function handleSubmit(event) {
@@ -24,7 +20,7 @@ const InputFeild = () => {
 
   return (
     <form className="input" onSubmit={handleSubmit} autoComplete="on">
-      <button className="inpu__submit" type="submit">
+      <button className="inpu__submit" type="submit" id="buttonSearch">
         {" "}
         <BsSearch />
       </button>

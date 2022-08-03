@@ -43,7 +43,10 @@ const Hero = ({ title, sortProducts, arry_intrv, sort }) => {
         backgroundSize: "cover"
       }}
     >
-      <h1 key={`hero${title}-h`}>{title}</h1>
+      <div key="title-hero">
+        <h1 key={`hero${title}-h`}>{title}</h1>
+      </div>
+
       <div className="hero-ccontent" key={`hero-sort`}>
         {sort ? (
           <div className="product-filter" key={`hero-sort-product-filter`}>
@@ -91,7 +94,9 @@ const Hero = ({ title, sortProducts, arry_intrv, sort }) => {
               </select>
             </li>
           </div>
-        ) : null}
+        ) : (
+          <div className="product-filter" />
+        )}
       </div>
       <Breadcrumbs />
     </div>
