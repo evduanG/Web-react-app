@@ -1,27 +1,31 @@
 .product-card {
-    display: block;
-    padding: 1%;
-    flex-direction: column;
-    align-items: center;
-    max-width: 300px;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
-    border: 1px solid;
-    margin: 1%;
-    flex: 1 1 16%;
+  display: block;
+  padding: 1%;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  border: 1px solid;
+  margin: 1%;
+  flex: 1 1 16%;
 }
 .product-card:hover {
   box-shadow: 10px 10px 8px #888888;
 }
 
 .product-image img {
-  max-block-size: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
   background: white;
 }
 
 .product-image {
   height: 200px;
   width: 200px;
+  margin: auto;
 }
 .product-info {
   margin-top: auto;
@@ -46,18 +50,18 @@
   }
 }
 .product-button {
-    width: -webkit-fill-available;
-    font-size: 20px;
-    font-family: monospace;
-    background: #92231d;
-    text-align: center;
-    color: white;
-    padding: 5px;
-    cursor: pointer;
+  width: -webkit-fill-available;
+  font-size: 20px;
+  font-family: monospace;
+  background: #92231d;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .product-button:hover {
- background: rgb(255 255 255);
+  background: rgb(255 255 255);
   color: rgb(163 0 0);
 }
 .product-button:checked {
@@ -67,5 +71,17 @@
 .product-button:active {
   background: white;
   color: black;
+  z-index: -20;
   box-shadow: 10px 10px 10px 10px rgb(0 0 0 / 25%);
+}
+
+.msgOfplosOnclick {
+  display: none;
+  border-radius: 50%;
+  background: red;
+  color: #000;
+}
+.product-button:active .msgOfplosOnclick {
+  display: block;
+  z-index: 20;
 }

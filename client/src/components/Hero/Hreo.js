@@ -38,7 +38,7 @@ const Hero = ({ title, sortProducts, arry_intrv, sort }) => {
         display: "block",
         backgroundImage: `url(${arry_intrv[banner]})`,
         backgroundRepeat: "no-repeat",
-        width: window.innerWidth - 20,
+        width: "auto",
         height: "350px",
         backgroundSize: "cover"
       }}

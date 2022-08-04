@@ -4,6 +4,9 @@ import { useContext } from "react";
 import CartContext from "../../context/CartContext";
 
 function Product({ id, price, title, image, caytegory, subcategory }) {
+  if (title.length > 20) {
+    title.slice(0, 19);
+  }
   const { addToCart } = useContext(CartContext);
   const isCocktail = () => {
     return caytegory === "Cocktail";
@@ -36,7 +39,10 @@ function Product({ id, price, title, image, caytegory, subcategory }) {
             }}
           >
             Add to cart
-          </button>
+          </button>{" "}
+          <div className="msgOfplosOnclick" key={`msgOfplosOnclick${id}`}>
+            +
+          </div>
         </div>
       ) : (
         <div className="product-info" key={`product-car_${id}_${title}_info`}>

@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import "./App.css";
 // path: liquor-store\src\App.js
 // pageing
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Cart from "./pages/Cart";
-import Accessories from "./pages/Accessories";
 import Alcohol from "./pages/Alcohol";
 import CocktailBook from "./pages/CocktailBook";
 import NoMatch from "./pages/NoMatch";
@@ -287,7 +287,7 @@ function App() {
             switchCategory
           }}
         >
-                <Header
+          <Header
             resetData={resetData}
             alcoholCatgury={data.alcoholCatgury}
             categorys={categorys}

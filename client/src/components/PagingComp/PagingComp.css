@@ -1,0 +1,35 @@
+.pagination-item button {
+  font-size: 20px;
+  font-style: italic;
+  font-family: monospace;
+  background: white;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+}
+
+.pagination-item-current {
+  font-size: 20px;
+  font-style: italic;
+  font-family: monospace;
+  background: rgb(60, 60, 156);
+  text-align: center;
+  color: white;
+  padding: 2% 5% 0 5%;
+}
+
+.pagination-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.pagination {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  align-self: auto;
+  flex-direction: column;
+}

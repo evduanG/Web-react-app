@@ -2,16 +2,10 @@ import "./Products.css";
 import Product from "../Product/Product";
 import { useContext } from "react";
 import ShopContext from "../../context/ShopContext";
+import PagingComp from "../PagingComp/PagingComp";
 const Products = () => {
-  const { pageNumber, setPageNumber, showProducts, productsList } = useContext(
-    ShopContext
-  );
+  const { showProducts, productsList } = useContext(ShopContext);
 
-  const max = Math.floor(productsList.length / 16);
-  let pageing = [];
-  for (let i = 0; i < max; i++) {
-    pageing.push(i);
-  }
   return productsList.length === 0 ? (
     <div className="no-products" key="no products">
       {" "}
@@ -36,28 +30,7 @@ const Products = () => {
           );
         })}
       </div>
-      <div className="pagination" key="pagination">
-        <div className="pagination-item" key="pagination_map">
-          {pageing.map((page_i) => {
-            if (page_i === Number(pageNumber)) {
-              return <h3>{page_i}</h3>;
-            } else {
-              return (
-                <button
-                  value={page_i}
-                  className="button-page_i"
-                  key={`page_i${page_i}button`}
-                  onClick={(e) => {
-                    setPageNumber(e.currentTarget.value);
-                  }}
-                >
-                  <h3 key={`page_i${page_i}h3`}>{page_i}</h3>
-                </button>
-              );
-            }
-          })}
-        </div>
-      </div>
+      <PagingComp />
     </div>
   );
 };

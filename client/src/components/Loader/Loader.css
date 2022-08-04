@@ -16,3 +16,8 @@
     transform: rotate(360deg);
   }
 }
+.loaderWarp {
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
