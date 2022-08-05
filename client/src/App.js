@@ -274,89 +274,68 @@ function App() {
         resetData
       }}
     >
-      <CartContext.Provider
-        value={{ cart, changeQuantity, removeFromCart, addToCart, setCart }}
-      >
-        <DataContext.Provider
-          value={{
-            data,
-            sortProducts,
-            productsList,
-            cocktailBook,
-            setProductsList,
-            switchCategory
-          }}
-        >
-          <Header
-            resetData={resetData}
-            alcoholCatgury={data.alcoholCatgury}
-            categorys={categorys}
-            key="Header"
+      <Header
+        resetData={resetData}
+        alcoholCatgury={data.alcoholCatgury}
+        categorys={categorys}
+        key="Header"
+      />
+      <div id="App-page" key="App-page">
+        <Routes>
+          <Route path="/" element={<Home key="Home_element" />} key="Home" />
+          <Route
+            path="/about"
+            element={<About key="About_element" />}
+            key="About"
           />
-          <div id="App-page" key="App-page">
-            <Routes>
-              <Route
-                path="/"
-                element={<Home key="Home_element" />}
-                key="Home"
-              />
-              <Route
-                path="/about"
-                element={<About key="About_element" />}
-                key="About"
-              />
-              <Route
-                path="/cart"
-                element={<Cart key="Cart_element" />}
-                key="Cart"
-              />
-              {categorys.map((element) => {
-                return (
-                  <>
-                    <Route path={`/${element.category}`} key={element.id}>
-                      <Route
-                        index
-                        element={<AlcoholCatgurys argCatgury={element} />}
-                      />
-                      {element.subcategory.map((subcategory) => {
-                        return (
-                          <>
-                            <Route
-                              path={subcategory.subcategory}
-                              element={
-                                <Alcohol
-                                  alcoholCatgury={subcategory.subcategory}
-                                />
-                              }
-                              key={subcategory.key}
-                            />
-                            <Route
-                              path={`/${element.category}/${subcategory.subcategory}/:id`}
-                              element={<SingleProductPage />}
-                            />
-                          </>
-                        );
-                      })}
-                    </Route>
-                    ;
-                  </>
-                );
-              })}
-              <Route path="/cocktail" element={<CocktailBook />} />
-              <Route path="/cocktail/:id" element={<CocktailProductPage />} />
-              <Route path="/account" element={<Login_Registe />} />
-              <Route
-                path="/account/stiling_credit_information"
-                element={<UserNoLogin />}
-              />
-              <Route path="/search" element={<Search />} />
+          <Route
+            path="/cart"
+            element={<Cart key="Cart_element" />}
+            key="Cart"
+          />
+          {categorys.map((element) => {
+            return (
+              <>
+                <Route path={`/${element.category}`} key={element.id}>
+                  <Route
+                    index
+                    element={<AlcoholCatgurys argCatgury={element} />}
+                  />
+                  {element.subcategory.map((subcategory) => {
+                    return (
+                      <>
+                        <Route
+                          path={subcategory.subcategory}
+                          element={
+                            <Alcohol alcoholCatgury={subcategory.subcategory} />
+                          }
+                          key={subcategory.key}
+                        />
+                        <Route
+                          path={`/${element.category}/${subcategory.subcategory}/:id`}
+                          element={<SingleProductPage />}
+                        />
+                      </>
+                    );
+                  })}
+                </Route>
+                ;
+              </>
+            );
+          })}
+          <Route path="/cocktail" element={<CocktailBook />} />
+          <Route path="/cocktail/:id" element={<CocktailProductPage />} />
+          <Route path="/account" element={<Login_Registe />} />
+          <Route
+            path="/account/stiling_credit_information"
+            element={<UserNoLogin />}
+          />
+          <Route path="/search" element={<Search />} />
 
-              <Route path="*" element={<NoMatch />} />
-            </Routes>
-          </div>
-          <Footer />
-        </DataContext.Provider>
-      </CartContext.Provider>
+          <Route path="*" element={<NoMatch />} />
+        </Routes>
+      </div>
+      <Footer />
     </ShopContext.Provider>
   );
 }
