@@ -11,9 +11,7 @@ const app = express();
 ======get all data====get all data====get all data==get all data=====
 ====================================================================*/
 app.get("/", (req, res) => {
-  let returnOrdrtTo =
-    "due to problems in codesandbox.io A startup script may not work \n in order to fix \n go to package.json and change the delete the \n Open a new terminal \n and run npm run client";
-  res.send(returnOrdrtTo);
+  res.send("Hello from the server");
 });
 app.get("/api", (req, res) => {
   fs.readFile("./server/Data.json", "utf8", (err, data) => {
