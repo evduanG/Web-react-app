@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = ({ categorys }) => {
-  console.log(categorys);
+  console.log("in footer");
   return (
     <>
       <div className="footer">
@@ -27,10 +27,10 @@ const Footer = ({ categorys }) => {
           </div>
           {categorys.map((category) => {
             return (
-              <div className="a">
+              <div className="a" ket="footer-1">
                 <Link
                   to={`/${category.category}`}
-                  key={`link-li-to${category.category}`}
+                  key={`link-footer-to${category.category}`}
                 >
                   <h1>{category.category}</h1>
                 </Link>
@@ -70,7 +70,7 @@ export default Footer;
               <li className="dropdown" key={`${category.category}dropdown`}>
                 <Link
                   to={`/${category.category}`}
-                  key={`link-li-to${category.category}`}
+                  key={`link-footerto${category.category}`}
                 >
                   {category.category}
                 </Link>

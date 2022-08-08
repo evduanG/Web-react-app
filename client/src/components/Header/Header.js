@@ -7,7 +7,6 @@ import InputFeild from "./InputFeild/InputFeild";
 import SlidingCart from "./SlidingCart/SlidingCart";
 
 const Header = ({ resetData, alcoholCatgury, categorys }) => {
-  console.log(categorys);
   return (
     <div className="header" key="header">
       <div className="header-left" key="header-left">
@@ -42,10 +41,6 @@ const Header = ({ resetData, alcoholCatgury, categorys }) => {
             </Link>
           </li>
           {categorys.map((category) => {
-            category.subcategory.map((subcategory) => {
-              console.log(subcategory);
-              return;
-            });
             return (
               <li className="dropdown" key={`${category.category}dropdown`}>
                 <Link
