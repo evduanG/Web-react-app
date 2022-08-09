@@ -1,6 +1,7 @@
 import "./Product.css";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
+import { BsCartPlus } from "react-icons/bs";
 import CartContext from "../../context/CartContext";
 
 function Product({ id, price, title, image, caytegory, subcategory }) {
@@ -39,10 +40,8 @@ function Product({ id, price, title, image, caytegory, subcategory }) {
             }}
           >
             Add to cart
+            <BsCartPlus className="addToCartPlus" key={`addToCartPlus${id}`} />
           </button>{" "}
-          <div className="msgOfplosOnclick" key={`msgOfplosOnclick${id}`}>
-            +
-          </div>
         </div>
       ) : (
         <div className="product-info" key={`product-car_${id}_${title}_info`}>

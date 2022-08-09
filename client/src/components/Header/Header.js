@@ -55,7 +55,9 @@ const Header = ({ resetData, alcoholCatgury, categorys }) => {
                 >
                   {category.subcategory.map((subcategory) => {
                     return (
-                      <li>
+                      <li
+                        key={`${category.category}dropdown-${subcategory.subcategory}`}
+                      >
                         <Link
                           to={`/${category.category}/${subcategory.subcategory}`}
                           key={`${category.category}-${subcategory.subcategory}`}
@@ -79,29 +81,3 @@ const Header = ({ resetData, alcoholCatgury, categorys }) => {
   );
 };
 export default Header;
-/*
- {categorys.array.map((category) => {
-            return (
-              <li className="dropdown" key={`${category.category}dropdown`}>
-                <Link
-                  to={`/${category.category}`}
-                  key={`link-li-to${category.category}`}
-                >
-                  {category}
-                </Link>
-                <div
-                  className="dropdown-content"
-                  key={`${category}-dropdown-content`}
-                >
-                  {category.subcategory.array.map((item) => (
-                    <li key={`LI_drdn${item.id}`}>
-                      <Link to={`/${category.category}/${item.subcategory}`}>
-                        {item.subcategory}
-                      </Link>
-                    </li>
-                  ))}
-                </div>
-              </li>
-            );
-          })}
-*/

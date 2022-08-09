@@ -1,57 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { BsFacebook } from "react-icons/bs";
+import { FiInstagram } from "react-icons/fi";
 import "./Footer.css";
 
-const Footer = ({ categorys }) => {
-  console.log("in footer");
+const Footer = () => {
   return (
     <>
       <div className="footer">
         <div className="contain">
           <div className="col">
             <h1>Company</h1>
-            <ul>
+            <ul key={"footer-col-Company-ul"}>
               <Link to="/about">
-                <li>About</li>
+                <li key={"footer-col-Company-li-About"}>About</li>
               </Link>
               <Link to="/account">
                 {" "}
-                <li>Account</li>
+                <li key={"footer-col-Company-li-Account"}>Account</li>
               </Link>
               <Link to="/cart">
-                <li>cart</li>
+                <li key={"footer-col-Company-li-cart"}>cart</li>
               </Link>
-              <li>Social</li>
-              <li>Get in touch</li>
             </ul>
           </div>
-          {categorys.map((category) => {
-            return (
-              <div className="a" ket="footer-1">
-                <Link
-                  to={`/${category.category}`}
-                  key={`link-footer-to${category.category}`}
-                >
-                  <h1>{category.category}</h1>
-                </Link>
-                {category.subcategory.map((subcategory) => {
-                  return (
-                    <li>
-                      <Link
-                        to={`/${category.category}/${subcategory.subcategory}`}
-                        key={`${category.category}-${subcategory.subcategory}-Footer`}
-                      >
-                        {subcategory.subcategory}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </div>
-            );
-          })}
-          <div className="col social">
-            <h1>Social</h1>
-            <ul></ul>
+          <div className="col" key={"footer-col-Social-div"}>
+            <h1 key={"footer-col-Social-h1"}>Social</h1>
+            <li key="li-Facebook">
+              <BsFacebook />
+            </li>
+            <li key="li-Instagram">
+              <FiInstagram />
+            </li>
           </div>
           <div className="clearfix"></div>
         </div>
@@ -60,39 +40,3 @@ const Footer = ({ categorys }) => {
   );
 };
 export default Footer;
-/*
-   {categorys.map((category) => {
-            category.subcategory.map((subcategory) => {
-              console.log(subcategory);
-              return;
-            });
-            return (
-              <li className="dropdown" key={`${category.category}dropdown`}>
-                <Link
-                  to={`/${category.category}`}
-                  key={`link-footerto${category.category}`}
-                >
-                  {category.category}
-                </Link>
-                <div
-                  className="dropdown-content"
-                  key={`${category}-dropdown-content`}
-                >
-                  {category.subcategory.map((subcategory) => {
-                    return (
-                      <li>
-                        <Link
-                          to={`/${category.category}/${subcategory.subcategory}`}
-                          key={`${category.category}-${subcategory.subcategory}`}
-                        >
-                          {subcategory.subcategory}
-                        </Link>
-                      </li>
-                    );
-                  })}
-                </div>
-              </li>
-            );
-          })}
-
-*/
